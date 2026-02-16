@@ -1,884 +1,177 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Viral Creator Tools | AI Tools to Grow Faster</title>
-  <meta name="description" content="Discover the best AI tools for creators: scripts, captions, video, thumbnails, automation, and monetization. Reviews, tutorials, and trending picks." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://viralcreatortools.io/" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ViralCreatorTools — ULTRA PRO</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Viral Creator Tools | AI Tools to Grow Faster" />
-  <meta property="og:description" content="Trending AI tools, creator workflows, and monetization playbooks. Built for TikTok, YouTube, and Instagram creators." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://viralcreatortools.io/" />
-  <meta property="og:image" content="https://viralcreatortools.io/og-image.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Viral Creator Tools" />
-  <meta name="twitter:description" content="AI tools + workflows for creators. Go viral faster." />
-  <meta name="twitter:image" content="https://viralcreatortools.io/og-image.jpg" />
-
-  <style>
-    :root{
-      --bg:#070A12;
-      --panel: rgba(255,255,255,.04);
-      --panel2: rgba(255,255,255,.03);
-      --border: rgba(255,255,255,.10);
-      --text:#F3F6FF;
-      --muted:#B9C6E6;
-
-      --p1:#7C5CFF;
-      --p2:#2DE1C2;
-      --p3:#FFB020;
-      --p4:#FF4D8D;
-
-      --shadow: 0 16px 40px rgba(0,0,0,.45);
-      --r16:16px;
-      --r22:22px;
-      --max:1140px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1200px 700px at 12% -10%, rgba(124,92,255,.35), transparent 55%),
-        radial-gradient(900px 700px at 92% 5%, rgba(45,225,194,.22), transparent 55%),
-        radial-gradient(900px 700px at 60% 120%, rgba(255,77,141,.16), transparent 60%),
-        radial-gradient(700px 500px at 10% 120%, rgba(255,176,32,.12), transparent 60%),
-        var(--bg);
-      line-height:1.55;
-    }
-    a{color:inherit}
-    .container{max-width:var(--max); margin:0 auto; padding:22px}
-    .topbar{
-      position:sticky; top:0; z-index:60;
-      backdrop-filter: blur(12px);
-      background: rgba(7,10,18,.62);
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-    .nav{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:12px 22px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      text-decoration:none;
-      font-weight:1000;
-      letter-spacing:.2px;
-      white-space:nowrap;
-    }
-    .logo{
-      width:40px;height:40px;border-radius:14px;
-      background: linear-gradient(135deg, var(--p1), var(--p2));
-      box-shadow: 0 16px 34px rgba(124,92,255,.22);
-      position:relative; overflow:hidden;
-      flex:0 0 auto;
-    }
-    .logo:after{
-      content:"";
-      position:absolute; inset:-45%;
-      background: radial-gradient(circle at 40% 30%, rgba(255,255,255,.46), transparent 55%);
-      transform: rotate(18deg);
-    }
-    .navlinks{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
-    .navlinks a{
-      text-decoration:none;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:12px;
-      border:1px solid transparent;
-      font-weight:900;
-      font-size:14px;
-    }
-    .navlinks a:hover{
-      border-color:rgba(255,255,255,.10);
-      color:var(--text);
-      background: rgba(255,255,255,.03);
-    }
-    .announce{
-      display:flex; align-items:center; justify-content:center; gap:10px;
-      padding:10px 14px;
-      border-bottom:1px solid rgba(255,255,255,.06);
-      background:
-        radial-gradient(700px 240px at 20% 0%, rgba(255,176,32,.18), transparent 55%),
-        radial-gradient(700px 240px at 80% 0%, rgba(255,77,141,.18), transparent 55%),
-        rgba(0,0,0,.10);
-      color:var(--muted);
-      font-weight:850;
-      font-size:13px;
-    }
-    .announce b{color:var(--text)}
-    .announce a{color:var(--text); text-decoration:none; border-bottom:1px dashed rgba(255,255,255,.38)}
-    .announce a:hover{border-bottom-color:rgba(255,255,255,.70)}
-
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:12px 16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      text-decoration:none;
-      font-weight:950;
-      white-space:nowrap;
-      transition: transform .08s ease, filter .2s ease, background .2s ease;
-      cursor:pointer;
-    }
-    .btn:hover{transform: translateY(-1px)}
-    .btn.primary{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p1), #5B7DFF);
-      box-shadow: 0 14px 34px rgba(124,92,255,.26);
-    }
-    .btn.primary:hover{filter:brightness(1.06)}
-    .btn.teal{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p2), #27c6ff);
-      box-shadow: 0 14px 34px rgba(45,225,194,.18);
-      color:#071018;
-    }
-    .btn.hot{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p4), var(--p3));
-      box-shadow: 0 14px 34px rgba(255,77,141,.16);
-      color:#180c11;
-    }
-    .kbd{
-      font-size:12px; font-weight:950;
-      padding:4px 8px;
-      border-radius:10px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      color:var(--muted);
-    }
-
-    .hero{
-      padding:34px 0 12px;
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:16px;
-      align-items:stretch;
-    }
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      color:var(--muted);
-      font-weight:950;
-      font-size:13px;
-      letter-spacing:.2px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      padding:8px 10px;
-      border-radius:999px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:50%;
-      background: linear-gradient(135deg, var(--p4), var(--p2));
-      box-shadow: 0 0 18px rgba(255,77,141,.25);
-    }
-    h1{
-      margin:14px 0 10px;
-      font-size: clamp(34px, 4.8vw, 58px);
-      line-height:1.03;
-      letter-spacing:-.9px;
-    }
-    .sub{
-      margin:0 0 14px;
-      font-size:18px;
-      color:var(--muted);
-      max-width:64ch;
-      font-weight:750;
-    }
-    .searchWrap{
-      margin-top:14px;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .search{
-      flex: 1 1 320px;
-      display:flex;
-      gap:10px;
-      align-items:center;
-      padding:12px 14px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      box-shadow: 0 10px 24px rgba(0,0,0,.25);
-    }
-    .search input{
-      width:100%;
-      border:none;
-      background: transparent;
-      color:var(--text);
-      outline:none;
-      font-weight:900;
-      font-size:14px;
-    }
-    .search input::placeholder{color: rgba(185,198,230,.72)}
-    .filters{
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-    .chip{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:999px;
-      font-weight:900;
-      font-size:13px;
-      cursor:pointer;
-      user-select:none;
-    }
-    .chip.active{
-      border-color: rgba(45,225,194,.40);
-      background: rgba(45,225,194,.12);
-      color: var(--text);
-    }
-
-    .bullets{
-      margin:14px 0 0;
-      padding:0;
-      list-style:none;
-      display:grid;
-      gap:10px;
-      max-width:74ch;
-    }
-    .bullets li{
-      display:flex; gap:10px; align-items:flex-start;
-      color:var(--muted);
-      font-weight:850;
-    }
-    .check{
-      width:22px; height:22px; border-radius:8px;
-      display:grid; place-items:center;
-      background: rgba(45,225,194,.14);
-      border:1px solid rgba(45,225,194,.35);
-      color: var(--text);
-      flex:0 0 auto;
-      margin-top:1px;
-      font-size:14px;
-      font-weight:1000;
-    }
-
-    .card{
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border-radius: var(--r22);
-      box-shadow: var(--shadow);
-    }
-    .sideCard{
-      padding:16px;
-      background:
-        radial-gradient(700px 380px at 20% 0%, rgba(124,92,255,.22), transparent 60%),
-        radial-gradient(700px 380px at 85% 10%, rgba(45,225,194,.16), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-    .mini{
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:16px;
-      padding:12px;
-      background: rgba(0,0,0,.14);
-    }
-    .mini strong{display:block; margin-bottom:6px}
-    .mini span{color:var(--muted); font-size:14px; font-weight:800}
-    .disclosure{
-      margin-top:12px;
-      color:var(--muted);
-      font-size:13px;
-      border:1px dashed rgba(255,255,255,.18);
-      border-radius:16px;
-      padding:10px 12px;
-      background: rgba(0,0,0,.12);
-      font-weight:780;
-    }
-
-    .section{padding:26px 0}
-    .section h2{margin:0 0 8px; font-size:28px; letter-spacing:-.3px}
-    .section p{margin:0 0 14px; color:var(--muted); max-width:92ch; font-weight:770}
-
-    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
-    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
-
-    .toolCard{padding:16px}
-    .toolTop{display:flex; justify-content:space-between; gap:10px; align-items:flex-start}
-    .badge{
-      font-size:12px;
-      font-weight:1000;
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      color:var(--text);
-      white-space:nowrap;
-    }
-    .badge.trending{
-      border-color: rgba(255,77,141,.40);
-      background: rgba(255,77,141,.14);
-    }
-    .badge.recurring{
-      border-color: rgba(45,225,194,.40);
-      background: rgba(45,225,194,.12);
-    }
-    .badge.editor{
-      border-color: rgba(255,176,32,.40);
-      background: rgba(255,176,32,.12);
-    }
-
-    .toolMeta{
-      margin:10px 0 0;
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
-    }
-    .tag{
-      font-size:12px;
-      font-weight:900;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      color:var(--muted);
-    }
-
-    .ratingRow{
-      margin-top:10px;
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      color:var(--muted);
-      font-weight:850;
-      font-size:13px;
-    }
-    .stars{
-      letter-spacing:1px;
-      color: rgba(255,176,32,.95);
-      text-shadow: 0 0 16px rgba(255,176,32,.12);
-      font-weight:1000;
-    }
-
-    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
-
-    .divider{height:1px; background: rgba(255,255,255,.08); margin:12px 0 0}
-
-    .callout{
-      padding:18px;
-      background:
-        radial-gradient(800px 400px at 15% 0%, rgba(255,77,141,.18), transparent 60%),
-        radial-gradient(800px 400px at 85% 0%, rgba(45,225,194,.14), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-    }
-    .callout h3{margin:0 0 8px; font-size:20px}
-    .callout p{margin:0 0 12px; color:var(--muted)}
-
-    .formRow{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:10px}
-    input[type="email"]{
-      flex: 1 1 240px;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color:var(--text);
-      outline:none;
-      font-weight:850;
-    }
-    input[type="email"]::placeholder{color: rgba(185,198,230,.72)}
-    .small{font-size:12px; color:var(--muted); font-weight:770}
-    .mutedlink{color:var(--muted); text-decoration:none}
-    .mutedlink:hover{color:var(--text)}
-
-    details{
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:16px;
-      padding:12px 12px;
-      background: rgba(255,255,255,.03);
-    }
-    details + details{margin-top:10px}
-    summary{cursor:pointer; font-weight:1000}
-    summary::-webkit-details-marker{display:none}
-    .faqAnswer{margin:10px 0 0; color:var(--muted); font-weight:850}
-
-    footer{
-      padding:26px 0 46px;
-      border-top:1px solid rgba(255,255,255,.08);
-      color:var(--muted);
-      font-size:14px;
-    }
-    .footergrid{
-      display:grid; grid-template-columns: 1.4fr .6fr; gap:16px;
-      align-items:start;
-    }
-    .footerlinks a{
-      display:inline-block;
-      margin:0 12px 10px 0;
-      text-decoration:none;
-      color:var(--muted);
-      font-weight:900;
-    }
-    .footerlinks a:hover{color:var(--text)}
-
-    .stickyCta{
-      position:fixed; left:0; right:0; bottom:0; z-index:70;
-      padding:10px 12px calc(10px + env(safe-area-inset-bottom));
-      background: rgba(7,10,18,.78);
-      backdrop-filter: blur(12px);
-      border-top:1px solid rgba(255,255,255,.10);
-      display:none;
-    }
-    .stickyInner{
-      max-width:var(--max);
-      margin:0 auto;
-      display:flex; gap:10px;
-      align-items:center; justify-content:space-between;
-    }
-    .stickyText{
-      color:var(--muted);
-      font-weight:950;
-      font-size:13px;
-      line-height:1.15;
-    }
-    .stickyText b{color:var(--text)}
-    .stickyBtns{display:flex; gap:8px; flex-wrap:nowrap}
-    .stickyBtns .btn{padding:10px 12px; border-radius:12px; font-size:13px}
-
-    /* subtle floating gradient blob */
-    .blob{
-      position:absolute;
-      right:-120px;
-      top:-120px;
-      width:340px;
-      height:340px;
-      border-radius: 100px;
-      filter: blur(26px);
-      opacity:.55;
-      background: conic-gradient(from 120deg, rgba(124,92,255,.9), rgba(45,225,194,.8), rgba(255,77,141,.8), rgba(255,176,32,.75), rgba(124,92,255,.9));
-      animation: floaty 10s ease-in-out infinite;
-      pointer-events:none;
-    }
-    @keyframes floaty{
-      0%,100%{transform: translate(0,0) rotate(0deg)}
-      50%{transform: translate(-30px, 40px) rotate(18deg)}
-    }
-    .heroWrap{position:relative}
-
-    @media (max-width: 980px){
-      .hero{grid-template-columns:1fr; gap:14px}
-      .grid3{grid-template-columns:1fr}
-      .grid2{grid-template-columns:1fr}
-      .navlinks{display:none}
-      .stickyCta{display:block}
-      body{padding-bottom:84px}
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"Do you use affiliate links?","acceptedAnswer":{"@type":"Answer","text":"Yes. Some links may be affiliate links. If you purchase through them, we may earn a commission at no extra cost to you."}},
-      {"@type":"Question","name":"What tools should creators start with?","acceptedAnswer":{"@type":"Answer","text":"Start with tools that increase output and consistency: script + caption helpers, an editing workflow, and a branded AI assistant for FAQs and offers (like CustomGPT)."}}
-    ]
-  }
-  </script>
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#050b1a;
+    color:white;
+}
+header{
+    position:sticky;
+    top:0;
+    background:#070f2b;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+header a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+.hero{
+    text-align:center;
+    padding:90px 20px;
+    background:linear-gradient(120deg,#09122c,#1a1f4d,#0b0f2e);
+}
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+.hero p{
+    max-width:700px;
+    margin:auto;
+    opacity:.8;
+}
+.cta-btn{
+    display:inline-block;
+    margin:15px;
+    padding:15px 25px;
+    border-radius:8px;
+    background:linear-gradient(90deg,#6a5cff,#9c5cff);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+.section{
+    padding:60px 25px;
+    max-width:1200px;
+    margin:auto;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.card{
+    background:#0e1738;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-6px);
+}
+.badge{
+    font-size:12px;
+    background:#ff3d3d;
+    padding:4px 8px;
+    border-radius:6px;
+    margin-bottom:10px;
+    display:inline-block;
+}
+.footer{
+    text-align:center;
+    padding:40px;
+    opacity:.6;
+}
+.sticky-mobile{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#121a44;
+    padding:12px;
+    text-align:center;
+}
+</style>
 </head>
 
 <body>
-  <div class="announce">
-    <span>Trending this week: <b>AI Scripts</b> + <b>Captions</b> + <b>Thumbnails</b> •</span>
-    <a href="#trending">See picks</a>
-    <span>• Affiliate disclosure: some links may earn a commission.</span>
-  </div>
 
-  <div class="topbar">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Viral Creator Tools Home">
-        <span class="logo" aria-hidden="true"></span>
-        <span>Viral Creator Tools</span>
-      </a>
+<header>
+<div><strong>ViralCreatorTools</strong></div>
+<div>
+<a href="#">Tools</a>
+<a href="#">Trending</a>
+<a href="#">Monetize</a>
+</div>
+</header>
 
-      <div class="navlinks">
-        <a href="#trending">Trending</a>
-        <a href="#categories">Categories</a>
-        <a href="#playbooks">Playbooks</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#faq">FAQ</a>
-      </div>
+<section class="hero">
+<h1>🔥 Viral AI Tools Creators Use to Grow Fast</h1>
+<p>Discover trending AI tools for TikTok, YouTube automation, and content creators. Monetize smarter with AI workflows and creator automation platforms.</p>
 
-      <a class="btn primary" href="#trending">Explore Tools</a>
-    </nav>
-  </div>
+<a class="cta-btn" href="https://customgpt.ai/?fpr=del83" target="_blank">Try CustomGPT</a>
+<a class="cta-btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank">Watch Live Demo</a>
+</section>
 
-  <main id="top" class="container heroWrap">
-    <div class="blob" aria-hidden="true"></div>
+<section class="section">
+<h2>🚀 Trending AI Creator Tools</h2>
 
-    <section class="hero" aria-label="Hero">
-      <div>
-        <span class="kicker"><span class="dot" aria-hidden="true"></span> TikTok • YouTube • Instagram • Shorts</span>
-        <h1>AI tools + workflows that help creators go viral faster.</h1>
-        <p class="sub">
-          Discover <strong>creator‑tested AI tools</strong> for scripts, captions, editing, thumbnails, and monetization.
-          Built for speed, consistency, and growth.
-        </p>
+<div class="grid">
 
-        <div class="searchWrap" aria-label="Search and filters">
-          <div class="search" role="search">
-            <span class="kbd">/</span>
-            <input id="searchInput" placeholder="Search tools (scripts, captions, thumbnails…)" aria-label="Search tools" />
-          </div>
+<div class="card">
+<div class="badge">HOT</div>
+<h3>CustomGPT AI</h3>
+<p>Create AI assistants and monetize workflows with automation.</p>
+<a class="cta-btn" href="https://customgpt.ai/?fpr=del83" target="_blank">Launch Tool</a>
+</div>
 
-          <div class="filters" aria-label="Quick filters">
-            <div class="chip active" data-filter="all">All</div>
-            <div class="chip" data-filter="scripts">Scripts</div>
-            <div class="chip" data-filter="video">Video</div>
-            <div class="chip" data-filter="thumbnails">Thumbnails</div>
-            <div class="chip" data-filter="automation">Automation</div>
-          </div>
-        </div>
+<div class="card">
+<div class="badge">VIDEO</div>
+<h3>AI Video Generator</h3>
+<p>Create viral faceless videos using automation and AI scripts.</p>
+<a class="cta-btn" href="#">Coming Soon</a>
+</div>
 
-        <ul class="bullets">
-          <li><span class="check" aria-hidden="true">✓</span> Turn ideas into <strong>viral scripts</strong> in minutes</li>
-          <li><span class="check" aria-hidden="true">✓</span> Post more often with <strong>AI-assisted editing</strong></li>
-          <li><span class="check" aria-hidden="true">✓</span> Convert views into revenue with <strong>creator monetization tools</strong></li>
-        </ul>
+<div class="card">
+<div class="badge">SCRIPT</div>
+<h3>AI Caption Generator</h3>
+<p>Generate viral hooks, captions and scripts instantly.</p>
+<a class="cta-btn" href="#">Coming Soon</a>
+</div>
 
-        <div class="ctaRow" aria-label="Primary calls to action">
-          <a class="btn hot" href="#trending">See Trending Tools</a>
-          <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">
-            Try CustomGPT
-          </a>
-          <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">
-            Watch Demo
-          </a>
-        </div>
+</div>
+</section>
 
-        <div class="disclosure">
-          <strong>Affiliate disclosure:</strong> Some links may be affiliate links. If you click and purchase,
-          we may earn a commission at no extra cost to you.
-        </div>
-      </div>
+<section class="section">
+<h2>💰 Monetize Your Influence</h2>
 
-      <aside class="card sideCard" aria-label="Creator quick-start">
-        <div class="mini">
-          <strong>Creator quick‑start</strong>
-          <span>Pick 1 category → choose 1 tool → follow a playbook → publish 3 videos this week.</span>
-        </div>
-        <div class="mini">
-          <strong>Best “conversion” tool</strong>
-          <span><b>CustomGPT</b> helps you turn audience questions into sales with a branded AI assistant.</span>
-        </div>
-        <div class="mini">
-          <strong>Perfect for</strong>
-          <span>Creators, coaches, agencies, and brands who want faster content + better conversion.</span>
-        </div>
-        <div class="mini">
-          <strong>Pro tip</strong>
-          <span>Build 1 landing page per category and pin it in your bio.</span>
-        </div>
-      </aside>
-    </section>
+<div class="grid">
 
-    <section id="trending" class="section" aria-label="Trending tools">
-      <h2>Trending AI tools</h2>
-      <p>These are the highest‑intent tools to feature on your homepage. Add more links inside category pages later.</p>
+<div class="card">
+<h3>Automation + CRM Stack</h3>
+<p>Combine AI workflows with CRM tools to scale creator businesses.</p>
+<a class="cta-btn" href="#">Learn More</a>
+</div>
 
-      <div class="grid3" id="toolGrid">
-        <!-- TOOL 1 -->
-        <article class="card toolCard" data-tags="scripts automation">
-          <div class="toolTop">
-            <div>
-              <h3 style="margin:0 0 6px;font-size:18px;">AI Script Generator</h3>
-              <p style="margin:0;color:var(--muted);font-weight:800;">Turn hooks + outlines into TikTok/Shorts scripts fast.</p>
-            </div>
-            <span class="badge trending">Trending</span>
-          </div>
+<div class="card">
+<h3>Faceless Content Systems</h3>
+<p>Use AI voice and video to create automated channels.</p>
+<a class="cta-btn" href="#">Learn More</a>
+</div>
 
-          <div class="toolMeta">
-            <span class="tag">Hooks</span><span class="tag">Outlines</span><span class="tag">Short‑form</span>
-          </div>
+</div>
+</section>
 
-          <div class="ratingRow">
-            <span class="stars">★★★★★</span>
-            <span>Best for: speed</span>
-          </div>
+<div class="footer">
+<p>Affiliate Disclosure: Some links may earn commissions.</p>
+</div>
 
-          <div class="ctaRow">
-            <a class="btn primary" href="#categories">Browse scripts</a>
-            <a class="btn" href="#playbooks">Use playbook</a>
-          </div>
-          <div class="divider"></div>
-          <p class="small" style="margin:10px 0 0;">Tip: Test 3 hooks per video. Keep the best and iterate.</p>
-        </article>
+<div class="sticky-mobile">
+<a class="cta-btn" href="https://customgpt.ai/?fpr=del83" target="_blank">🔥 Start With CustomGPT</a>
+</div>
 
-        <!-- TOOL 2 -->
-        <article class="card toolCard" data-tags="automation scripts">
-          <div class="toolTop">
-            <div>
-              <h3 style="margin:0 0 6px;font-size:18px;">CustomGPT — Branded AI Assistant</h3>
-              <p style="margin:0;color:var(--muted);font-weight:800;">Train a bot on your offers, FAQs, and brand voice.</p>
-            </div>
-            <span class="badge recurring">Recurring</span>
-          </div>
-
-          <div class="toolMeta">
-            <span class="tag">Monetization</span><span class="tag">FAQ bot</span><span class="tag">Brand voice</span>
-          </div>
-
-          <div class="ratingRow">
-            <span class="stars">★★★★★</span>
-            <span>Best for: conversion</span>
-          </div>
-
-          <div class="ctaRow">
-            <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try CustomGPT</a>
-            <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
-          </div>
-          <div class="divider"></div>
-          <p class="small" style="margin:10px 0 0;">Tip: Add the bot link to your bio to answer questions 24/7.</p>
-        </article>
-
-        <!-- TOOL 3 -->
-        <article class="card toolCard" data-tags="thumbnails video">
-          <div class="toolTop">
-            <div>
-              <h3 style="margin:0 0 6px;font-size:18px;">AI Thumbnail Studio</h3>
-              <p style="margin:0;color:var(--muted);font-weight:800;">Generate high‑CTR thumbnails and title variations.</p>
-            </div>
-            <span class="badge editor">Creator</span>
-          </div>
-
-          <div class="toolMeta">
-            <span class="tag">CTR</span><span class="tag">Titles</span><span class="tag">A/B tests</span>
-          </div>
-
-          <div class="ratingRow">
-            <span class="stars">★★★★☆</span>
-            <span>Best for: clicks</span>
-          </div>
-
-          <div class="ctaRow">
-            <a class="btn primary" href="#categories">Browse thumbnails</a>
-            <a class="btn" href="#playbooks">Use playbook</a>
-          </div>
-          <div class="divider"></div>
-          <p class="small" style="margin:10px 0 0;">Tip: Keep text to 3–5 words. Faces + contrast win.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="categories" class="section" aria-label="Categories">
-      <h2>Categories creators actually use</h2>
-      <p>Use these as SEO pages later: /ai-script-tools, /ai-caption-tools, /ai-thumbnail-tools, etc.</p>
-
-      <div class="grid3">
-        <div class="card toolCard">
-          <div class="toolTop">
-            <h3 style="margin:0;font-size:18px;">Scripts & Hooks</h3>
-            <span class="badge trending">High CTR</span>
-          </div>
-          <p style="margin:10px 0 0;color:var(--muted);font-weight:800;">Tools for hooks, scripts, story arcs, and ideation.</p>
-          <div class="ctaRow">
-            <a class="btn primary" href="#">Open category</a>
-            <a class="btn" href="#newsletter">Get updates</a>
-          </div>
-        </div>
-
-        <div class="card toolCard">
-          <div class="toolTop">
-            <h3 style="margin:0;font-size:18px;">Video & Editing</h3>
-            <span class="badge editor">Time saver</span>
-          </div>
-          <p style="margin:10px 0 0;color:var(--muted);font-weight:800;">Cutting, captions, templates, repurposing, and shorts.</p>
-          <div class="ctaRow">
-            <a class="btn primary" href="#">Open category</a>
-            <a class="btn" href="#playbooks">See playbook</a>
-          </div>
-        </div>
-
-        <div class="card toolCard">
-          <div class="toolTop">
-            <h3 style="margin:0;font-size:18px;">Monetization</h3>
-            <span class="badge recurring">Revenue</span>
-          </div>
-          <p style="margin:10px 0 0;color:var(--muted);font-weight:800;">Link‑in‑bio, offers, funnels, and conversion tools.</p>
-          <div class="ctaRow">
-            <a class="btn primary" href="#">Open category</a>
-            <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try CustomGPT</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="playbooks" class="section" aria-label="Playbooks">
-      <div class="card callout">
-        <h3>Free playbook: “3‑Video Viral Sprint” (download)</h3>
-        <p>Pick a topic, generate hooks, write scripts, batch edit, and publish with a simple workflow.</p>
-
-        <form class="formRow" onsubmit="return false;" aria-label="Email signup form">
-          <input id="email" type="email" placeholder="Email address (optional)" aria-label="Email address" />
-          <button class="btn hot" type="button" onclick="downloadPlaybook()">Download playbook</button>
-        </form>
-
-        <p class="small" style="margin-top:10px;">No spam. Just templates, trend alerts, and creator workflows.</p>
-      </div>
-    </section>
-
-    <section id="newsletter" class="section" aria-label="Newsletter">
-      <h2>Get weekly “what’s trending” creator tools</h2>
-      <p>One email/week: new tools, best workflows, and monetization tactics.</p>
-
-      <div class="card" style="padding:18px;">
-        <div class="formRow">
-          <input type="email" placeholder="Email address" aria-label="Email address for newsletter" />
-          <button class="btn primary" type="button" onclick="fakeSignup()">Join free</button>
-        </div>
-        <p class="small" style="margin:10px 0 0;">(This button is a placeholder—connect to Mailchimp/ConvertKit later.)</p>
-      </div>
-    </section>
-
-    <section id="faq" class="section" aria-label="FAQ">
-      <h2>FAQ</h2>
-      <p>Quick answers for visitors (and search engines).</p>
-
-      <div class="card" style="padding:18px;">
-        <details>
-          <summary>Do you use affiliate links?</summary>
-          <p class="faqAnswer">Yes. Some links are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.</p>
-        </details>
-        <details>
-          <summary>How do I pick the right tool?</summary>
-          <p class="faqAnswer">Start with your biggest bottleneck (scripts, editing, thumbnails, or conversion). Pick one tool, use it for 7 days, then add the next category.</p>
-        </details>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container" aria-label="Footer">
-    <div class="footergrid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <span class="logo" aria-hidden="true" style="width:36px;height:36px;border-radius:14px;"></span>
-          <strong>Viral Creator Tools</strong>
-        </div>
-        <p style="margin:0 0 10px;">AI tools and creator workflows for faster growth and better monetization.</p>
-        <p class="small" style="margin:0;">© <span id="year"></span> Viral Creator Tools. All rights reserved.</p>
-      </div>
-
-      <div class="footerlinks">
-        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms">Terms</a>
-      </div>
-    </div>
-  </footer>
-
-  <div class="stickyCta" aria-label="Sticky call to action">
-    <div class="stickyInner">
-      <div class="stickyText"><b>Want to monetize your audience?</b><br/>Try CustomGPT or watch the demo.</div>
-      <div class="stickyBtns">
-        <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
-        <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Keyboard shortcut: focus search with "/"
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "/" && document.activeElement.tagName !== "INPUT" && document.activeElement.tagName !== "TEXTAREA") {
-        e.preventDefault();
-        document.getElementById("searchInput").focus();
-      }
-    });
-
-    // Filter chips
-    const chips = Array.from(document.querySelectorAll(".chip"));
-    const cards = Array.from(document.querySelectorAll("#toolGrid .toolCard"));
-
-    function setActive(filter){
-      chips.forEach(c => c.classList.toggle("active", c.dataset.filter === filter));
-      cards.forEach(card => {
-        const tags = (card.getAttribute("data-tags") || "").toLowerCase();
-        const show = filter === "all" || tags.includes(filter);
-        card.style.display = show ? "" : "none";
-      });
-    }
-
-    chips.forEach(chip => chip.addEventListener("click", () => setActive(chip.dataset.filter)));
-
-    // Search filter
-    document.getElementById("searchInput").addEventListener("input", (e) => {
-      const q = (e.target.value || "").toLowerCase().trim();
-      cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(q) ? "" : "none";
-      });
-    });
-
-    function fakeSignup(){
-      alert("Nice! Connect this to Mailchimp/ConvertKit later. For now, publish the page and start collecting traffic.");
-    }
-
-    function downloadPlaybook(){
-      const content = [
-        "3-VIDEO VIRAL SPRINT (PLAYBOOK)",
-        "===============================",
-        "",
-        "Goal: Ship 3 short-form videos in 60–90 minutes.",
-        "",
-        "STEP 1: Pick a topic (5 minutes)",
-        "- Choose ONE pain point your audience cares about.",
-        "",
-        "STEP 2: Generate 9 hooks (10 minutes)",
-        "- Write 9 hooks. Pick top 3.",
-        "- Keep hooks punchy: 'Stop doing X…' / '3 mistakes…' / 'I tried X for 7 days…'",
-        "",
-        "STEP 3: Write 3 scripts (15 minutes)",
-        "- 15–35 seconds each.",
-        "- Structure: Hook → Proof → Steps → CTA.",
-        "",
-        "STEP 4: Batch record (20 minutes)",
-        "- Record all 3 in one go.",
-        "",
-        "STEP 5: Edit + captions (20–30 minutes)",
-        "- Remove pauses. Add captions. Add 1–2 pattern interrupts.",
-        "",
-        "STEP 6: Publish (5 minutes)",
-        "- Post 1 now, schedule 2.",
-        "",
-        "MONETIZATION TIP",
-        "- Add a link in bio to a branded AI assistant that answers FAQs and sells your offer.",
-        "- Example: CustomGPT (affiliate): https://customgpt.ai/?fpr=del83",
-        "",
-        "viralcreatortools.io"
-      ].join("\n");
-
-      const blob = new Blob([content], {type: "text/plain"});
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "3-video-viral-sprint-playbook.txt";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-    }
-  </script>
 </body>
 </html>
