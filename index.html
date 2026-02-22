@@ -518,6 +518,39 @@
       margin-top:10px;
     }
 
+
+/* Creator Stack (ULTRA PRO) */
+.stackGrid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+}
+@media (min-width: 981px){
+  .stackGrid{grid-template-columns: repeat(3, 1fr);}
+}
+.stepPill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  font-weight:1000;
+  font-size:12px;
+  width:fit-content;
+}
+.stepNum{
+  width:22px;height:22px;border-radius:999px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background: linear-gradient(135deg, var(--p2), #27c6ff);
+  color:#071018;
+  font-weight:1100;
+  box-shadow: 0 10px 22px rgba(45,225,194,.18);
+}
+
+
   </style>
 
   <!-- Directory schema (simple) -->
@@ -541,6 +574,7 @@
 
       <div class="navlinks">
         <a href="#featured">Featured</a>
+        <a href="#creator-stack">Creator Stack</a>
         <a href="#new">Added This Week</a>
         <a href="#directory">Directory</a>
         <a href="#video-tools">Video</a>
@@ -593,6 +627,18 @@
       </div>
     </section>
 
+
+<!-- Creator Stack (ULTRA PRO) -->
+<section id="creator-stack" class="section" aria-label="Creator growth stack">
+  <h2>Creator Growth Stack</h2>
+  <p>A proven “idea → create → publish → monetize” workflow. Use this stack to build content faster and earn more—each step links to a recommended tool.</p>
+
+  <div class="stackGrid" id="creatorStackGrid" aria-label="Creator stack tools"></div>
+
+  <div class="disclosure" style="margin-top:14px;">
+    <strong>How to use:</strong> Start at Step 1, then move left-to-right. New visitors understand your system fast—which boosts clicks and conversions.
+  </div>
+</section>
 
     <!-- Added This Week -->
     <section id="new" class="section" aria-label="Added this week">
@@ -967,6 +1013,7 @@
     const toolGrid = document.getElementById("toolGrid");
     const newGrid = document.getElementById("newGrid");
     const featuredGrid = document.getElementById("featuredGrid");
+    const creatorStackGrid = document.getElementById("creatorStackGrid");
     const videoGrid = document.getElementById("videoGrid");
     const scriptsGrid = document.getElementById("scriptsGrid");
     const designGrid = document.getElementById("designGrid");
@@ -976,7 +1023,83 @@
       toolGrid.innerHTML = list.map(toolCard).join("");
     }
 
-    function renderFeatured(){
+    
+function stackCard(t, stepLabel, stepNum){
+  const b = badgeMap[t.badgeType] || badgeMap.trending;
+  const ping = b.ping ? '<span class="ping" aria-hidden="true"></span>' : '';
+  const badge = `<span class="badge ${b.class}">${ping}${b.label}</span>`;
+  const tagChips = t.tags.map(x => `<span class="tag">${x}</span>`).join("");
+  const linkBtn = (t.link && t.link !== "#")
+    ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener">Launch</a>`
+    : `<a class="btn primary" href="#compare">Add link</a>`;
+  const demoBtn = (t.demoLink && t.demoLink !== "#")
+    ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
+    : `<a class="btn" href="#compare">Compare</a>`;
+
+  return `
+    <article class="card toolCard" style="padding:16px;" onclick="openModal('${t.id}')">
+      <div class="stepPill" aria-label="step ${stepNum}">
+        <span class="stepNum">${stepNum}</span>
+        <span>${stepLabel}</span>
+      </div>
+
+      <div class="toolTop" style="margin-top:10px;">
+        <div>
+          <h3 style="margin:0 0 6px;font-size:18px;">${t.name}</h3>
+          <p style="margin:0;color:var(--muted);font-weight:820;">${t.blurb}</p>
+        </div>
+        ${badge}
+      </div>
+
+      <div class="toolMeta">${tagChips}</div>
+
+      <div class="ratingRow">
+        <span class="stars" aria-label="rating">${"★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating))}</span>
+        <span>${t.rating.toFixed(1)} / 5</span>
+      </div>
+
+      <div class="ctaRow2" onclick="event.stopPropagation()">
+        ${linkBtn}
+        ${demoBtn}
+      </div>
+
+      <div class="small" style="margin-top:10px;">Earnings: ${t.earnings}</div>
+    </article>
+  `;
+}
+
+function renderCreatorStack(){
+  if(!creatorStackGrid) return;
+
+  const steps = [
+    { label:"Discover ideas & keywords", id:"vidiq" },
+    { label:"Repurpose long → Shorts", id:"opusclip" },
+    { label:"Add AI voiceover fast", id:"elevenlabs" },
+    { label:"Create viral captions", id:"submagic" },
+    { label:"Generate high-converting ads", id:"adcreative" },
+    { label:"Monetize + automate DMs", id:"customgpt" }
+  ];
+
+  // If a tool isn't in the dataset yet, show a placeholder that points to Compare.
+  const cards = steps.map((s, i) => {
+    const t = tools.find(x => x.id === s.id);
+    if(!t){
+      return `
+        <article class="card toolCard" style="padding:16px;">
+          <div class="stepPill"><span class="stepNum">${i+1}</span><span>${s.label}</span></div>
+          <h3 style="margin:12px 0 6px;font-size:18px;">Add this tool</h3>
+          <p style="margin:0;color:var(--muted);font-weight:820;">You haven’t added <b>${s.id}</b> to your tools list yet. Add it in the dataset to activate.</p>
+          <div class="ctaRow2" style="margin-top:12px;">
+            <a class="btn primary" href="#compare">Go to Compare</a>
+          </div>
+        </article>
+      `;
+    }
+    return stackCard(t, s.label, i+1);
+  });
+
+  creatorStackGrid.innerHTML = cards.join("");
+}function renderFeatured(){
       // pick top 3 by score (must have a real link)
       const picks = [...tools]
         .filter(t => t.link && t.link !== "#")
@@ -998,6 +1121,7 @@
     // Default: show best converters first
     renderAll([...tools].sort((a,b)=> scoreTool(b) - scoreTool(a)));
     renderFeatured();
+    renderCreatorStack();
     renderNew();
     renderByCategory("video", videoGrid);
     renderByCategory("scripts", scriptsGrid);
