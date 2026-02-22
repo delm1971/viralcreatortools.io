@@ -462,6 +462,62 @@
       body{padding-bottom:84px}
       table{min-width:720px}
     }
+  
+    /* ULTRA PRO Affiliate Mode */
+    .toolCard.featured{
+      border-color: rgba(255,176,32,.35);
+      box-shadow: 0 22px 60px rgba(0,0,0,.55);
+      transform: translateY(-1px);
+    }
+    .toolCard.featured:after{
+      content:"FEATURED";
+      position:absolute;
+      top:14px; left:14px;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:1000;
+      letter-spacing:.6px;
+      color:#0b0f1f;
+      background: linear-gradient(135deg, rgba(255,176,32,.95), rgba(45,225,194,.85));
+      box-shadow: 0 12px 26px rgba(255,176,32,.14);
+      z-index:3;
+    }
+    .earnBadge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      font-weight:1000;
+      font-size:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      white-space:nowrap;
+    }
+    .earnBadge.high{border-color: rgba(255,176,32,.45); background: rgba(255,176,32,.12)}
+    .earnBadge.rec{border-color: rgba(45,225,194,.40); background: rgba(45,225,194,.12)}
+    .earnBadge.med{border-color: rgba(124,92,255,.40); background: rgba(124,92,255,.12)}
+    .earnBadge .bolt{
+      width:8px;height:8px;border-radius:50%;
+      background: rgba(255,176,32,.95);
+      box-shadow: 0 0 0 rgba(255,176,32,.55);
+      animation: ping 1.8s infinite;
+    }
+    .featuredGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media (min-width: 981px){
+      .featuredGrid{grid-template-columns: repeat(3, 1fr);}
+    }
+    .ctaSwitch{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
   </style>
 
   <!-- Directory schema (simple) -->
@@ -484,6 +540,7 @@
       </a>
 
       <div class="navlinks">
+        <a href="#featured">Featured</a>
         <a href="#new">Added This Week</a>
         <a href="#directory">Directory</a>
         <a href="#video-tools">Video</a>
@@ -509,6 +566,7 @@
         <div class="ctaRow">
           <a class="btn hot" href="#new">What’s New</a>
           <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try CustomGPT</a>
+          <a class="btn" href="https://www.opus.pro?via=5ad063" target="_blank" rel="nofollow sponsored noopener">🎬 Create Viral Clips</a>
           <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Watch Demo</a>
         </div>
 
@@ -523,6 +581,18 @@
         <div class="mini"><strong>SEO win</strong><span>Use the category anchors as pages later (/video-tools, /monetize-tools).</span></div>
       </aside>
     </section>
+
+    <!-- Featured (ULTRA PRO) -->
+    <section id="featured" class="section" aria-label="Featured affiliate picks">
+      <h2>Featured picks</h2>
+      <p>Highest-converting tools (high-ticket + recurring). Placed above the fold to maximize clicks.</p>
+      <div class="featuredGrid" id="featuredGrid"></div>
+
+      <div class="disclosure" style="margin-top:14px;">
+        Tip: keep <strong>3 featured</strong> tools max for focus. Rotate winners monthly based on clicks.
+      </div>
+    </section>
+
 
     <!-- Added This Week -->
     <section id="new" class="section" aria-label="Added this week">
@@ -662,20 +732,20 @@
 
   <!-- Floating CTA (desktop) -->
   <div class="floatCta" aria-label="Floating CTA">
-    <div class="floatNote">Want to monetize your audience?<br><b style="color:var(--text)">Try CustomGPT</b> or watch the demo.</div>
-    <div style="display:flex; gap:10px;">
-      <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
-      <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
+    <div class="floatNote" id="ctaNote">Want to monetize your audience?<br><b style="color:var(--text)" id="ctaName">Try CustomGPT</b> or watch the demo.</div>
+    <div style="display:flex; gap:10px;" id="ctaBtns">
+      <a class="btn teal" id="ctaPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
+      <a class="btn" id="ctaSecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
     </div>
   </div>
 
   <!-- Sticky CTA (mobile) -->
   <div class="stickyCta" aria-label="Sticky call to action">
     <div class="stickyInner">
-      <div class="stickyText"><b>Monetize faster.</b><br/>Try CustomGPT or watch the demo.</div>
-      <div class="stickyBtns">
-        <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
-        <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
+      <div class="stickyText"><b id="ctaStickyHeadline">Monetize faster.</b><br/><span id="ctaStickySub">Try CustomGPT or watch the demo.</span></div>
+      <div class="stickyBtns" id="ctaStickyBtns">
+        <a class="btn teal" id="ctaStickyPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
+        <a class="btn" id="ctaStickySecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Demo</a>
       </div>
     </div>
   </div>
@@ -707,6 +777,56 @@
         link:"https://customgpt.ai/?fpr=del83",
         demoLink:"https://customgpt.ai/demo/?fpr=del83"
       },
+
+      {
+        id:"opusclip",
+        name:"OpusClip",
+        tags:["video"],
+        blurb:"Turn long videos into viral Shorts automatically with AI clipping, captions, and reframing.",
+        rating:4.8,
+        badgeType:"trending",
+        earnings:"High",
+        added:"2026-02-21",
+        link:"https://www.opus.pro?via=5ad063",
+        demoLink:"https://www.opus.pro?via=5ad063"
+      },
+      {
+        id:"vidiq",
+        name:"vidIQ",
+        tags:["scripts","automation"],
+        blurb:"YouTube growth tool for keyword research, viral topics, and channel optimization.",
+        rating:4.7,
+        badgeType:"recurring",
+        earnings:"Recurring",
+        added:"2026-02-21",
+        link:"https://vidiq.com/viralcreatortool",
+        demoLink:"https://vidiq.com/viralcreatortool"
+      },
+      {
+        id:"elevenlabs",
+        name:"ElevenLabs AI Voice",
+        tags:["video","scripts"],
+        blurb:"Generate ultra-realistic AI voiceovers for faceless YouTube, ads, and content creation.",
+        rating:4.9,
+        badgeType:"highticket",
+        earnings:"High",
+        added:"2026-02-21",
+        link:"https://try.elevenlabs.io/zdosj2amo2mn",
+        demoLink:"https://try.elevenlabs.io/zdosj2amo2mn"
+      },
+      {
+        id:"adcreative",
+        name:"AdCreative.ai",
+        tags:["design","monetize"],
+        blurb:"AI ad creator built for high-converting creatives, native ads, and affiliate funnels.",
+        rating:4.6,
+        badgeType:"recurring",
+        earnings:"High",
+        added:"2026-02-21",
+        link:"https://free-trial.adcreative.ai/xu0dghxazexd",
+        demoLink:"https://free-trial.adcreative.ai/xu0dghxazexd"
+      },
+
       {
         id:"ai-video-repurpose",
         name:"AI Video Repurposing",
@@ -776,6 +896,17 @@
       new:      { label:"New", class:"new", ping:false }
     };
 
+    // ULTRA PRO: scoring to auto-rank tools for clicks/conversions
+    function scoreTool(t){
+      const w = {recurring: 3, trending: 2, highticket: 2, new: 1};
+      const badgeScore = (w[t.badgeType] || 0) * 100;
+      const ratingScore = (t.rating || 0) * 10;
+      const hasLink = (t.link && t.link !== "#") ? 40 : 0;
+      const earningsBoost = /recurring/i.test(t.earnings) ? 30 : /high/i.test(t.earnings) ? 20 : 0;
+      return badgeScore + ratingScore + hasLink + earningsBoost;
+    }
+
+
     function stars(r){
       const full = Math.floor(r);
       const half = (r - full) >= 0.5 ? 1 : 0;
@@ -790,6 +921,15 @@
       const tagChips = t.tags.map(x => `<span class="tag">${x}</span>`).join("");
       const ratingText = `${t.rating.toFixed(1)} / 5`;
       const s = "★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating));
+
+      // Earnings pill (visual conversion cue)
+      const earnClass = /recurring/i.test(t.earnings) ? "rec"
+        : /high/i.test(t.earnings) ? "high"
+        : "med";
+      const earnPill = `<span class="earnBadge ${earnClass}"><span class="bolt" aria-hidden="true"></span>${t.earnings}</span>`;
+
+      // Featured logic: highlight your best converters
+      const isFeatured = (t.badgeType === "recurring" || t.badgeType === "highticket") && t.rating >= 4.6 && t.link && t.link !== "#";
       const linkBtn = (t.link && t.link !== "#")
         ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener">Launch</a>`
         : `<a class="btn primary" href="#compare">Add link</a>`;
@@ -798,7 +938,7 @@
         : `<a class="btn" href="#compare">Compare</a>`;
 
       return `
-        <article class="card toolCard" data-tags="${t.tags.join(" ")}" data-name="${t.name.toLowerCase()}" data-rating="${t.rating}" data-added="${t.added}" onclick="openModal('${t.id}')">
+        <article class="card toolCard ${isFeatured ? "featured" : ""}" data-tags="${t.tags.join(" ")}" data-name="${t.name.toLowerCase()}" data-rating="${t.rating}" data-added="${t.added}" onclick="openModal('${t.id}')">
           <div class="toolTop">
             <div>
               <h3 style="margin:0 0 6px;font-size:18px;">${t.name}</h3>
@@ -810,6 +950,9 @@
           <div class="ratingRow">
             <span class="stars" aria-label="rating">${s}</span>
             <span>${ratingText}</span>
+          </div>
+          <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+            ${earnPill}
           </div>
           <div class="ctaRow2" onclick="event.stopPropagation()">
             ${linkBtn}
@@ -823,6 +966,7 @@
     // Render
     const toolGrid = document.getElementById("toolGrid");
     const newGrid = document.getElementById("newGrid");
+    const featuredGrid = document.getElementById("featuredGrid");
     const videoGrid = document.getElementById("videoGrid");
     const scriptsGrid = document.getElementById("scriptsGrid");
     const designGrid = document.getElementById("designGrid");
@@ -830,6 +974,15 @@
 
     function renderAll(list){
       toolGrid.innerHTML = list.map(toolCard).join("");
+    }
+
+    function renderFeatured(){
+      // pick top 3 by score (must have a real link)
+      const picks = [...tools]
+        .filter(t => t.link && t.link !== "#")
+        .sort((a,b)=> scoreTool(b) - scoreTool(a))
+        .slice(0,3);
+      if(featuredGrid) featuredGrid.innerHTML = picks.map(toolCard).join("");
     }
 
     function renderNew(){
@@ -842,7 +995,9 @@
       targetEl.innerHTML = list.map(toolCard).join("");
     }
 
-    renderAll(tools);
+    // Default: show best converters first
+    renderAll([...tools].sort((a,b)=> scoreTool(b) - scoreTool(a)));
+    renderFeatured();
     renderNew();
     renderByCategory("video", videoGrid);
     renderByCategory("scripts", scriptsGrid);
@@ -908,6 +1063,7 @@
       }
 
       renderAll(list);
+      renderFeatured();
       applyFilterAndSearch(); // keep current filter/search
     });
 
@@ -943,7 +1099,8 @@
         <div class="toolMeta" style="margin-top:12px;">${tagChips}</div>
         <div class="disclosure" style="margin-top:12px;">
           <strong>Added:</strong> ${t.added} • <strong>Earnings:</strong> ${t.earnings}<br/>
-          Replace placeholder links with your affiliate tracking URL once approved.
+          <div style="margin-top:10px;">${(/recurring/i.test(t.earnings) ? `<span class="earnBadge rec"><span class="bolt"></span>${t.earnings}</span>` : /high/i.test(t.earnings) ? `<span class="earnBadge high"><span class="bolt"></span>${t.earnings}</span>` : `<span class="earnBadge med"><span class="bolt"></span>${t.earnings}</span>`)}</div>
+          <div style="margin-top:10px;">Replace placeholder links with your affiliate tracking URL once approved.</div>
         </div>
         <div class="ctaRow2" style="margin-top:12px;">
           ${launch}
@@ -965,6 +1122,59 @@
     window.addEventListener("keydown", (e) => {
       if(e.key === "Escape") closeModal();
     });
+
+
+    // ULTRA PRO: rotating CTA (desktop + mobile) to lift CTR
+    const ctaPoolIds = ["customgpt","opusclip","elevenlabs","adcreative","vidiq"];
+    const ctaPool = ctaPoolIds.map(id => tools.find(t => t.id === id)).filter(Boolean);
+
+    function pickCta(i){
+      if(!ctaPool.length) return null;
+      return ctaPool[i % ctaPool.length];
+    }
+
+    function setCta(offer){
+      if(!offer) return;
+      const name = document.getElementById("ctaName");
+      const note = document.getElementById("ctaNote");
+      const p = document.getElementById("ctaPrimary");
+      const s = document.getElementById("ctaSecondary");
+      const sh = document.getElementById("ctaStickyHeadline");
+      const ss = document.getElementById("ctaStickySub");
+      const sp = document.getElementById("ctaStickyPrimary");
+      const ss2 = document.getElementById("ctaStickySecondary");
+
+      if(name) name.textContent = offer.name;
+      if(note) note.innerHTML = `Monetize your audience faster.<br><b style="color:var(--text)">${offer.name}</b> is a top pick for creators.`;
+      if(p){
+        p.href = offer.link || "#";
+        p.textContent = "Launch";
+      }
+      if(s){
+        s.href = offer.demoLink || offer.link || "#";
+        s.textContent = offer.demoLink && offer.demoLink !== offer.link ? "Demo" : "Learn";
+      }
+
+      if(sh) sh.textContent = "Top creator tool:";
+      if(ss) ss.textContent = offer.name + " • tap to launch or view details.";
+      if(sp){
+        sp.href = offer.link || "#";
+        sp.textContent = "Launch";
+      }
+      if(ss2){
+        ss2.href = offer.demoLink || offer.link || "#";
+        ss2.textContent = offer.demoLink && offer.demoLink !== offer.link ? "Demo" : "Learn";
+      }
+    }
+
+    // Start
+    let ctaIndex = 0;
+    setCta(pickCta(ctaIndex));
+    setInterval(() => {
+      ctaIndex++;
+      setCta(pickCta(ctaIndex));
+    }, 12000);
+
   </script>
 </body>
 </html>
