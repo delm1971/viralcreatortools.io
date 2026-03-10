@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ViralCreatorTools — DIRECTORY PRO V2</title>
-  <meta name="description" content="A creator-first AI tools directory: trending picks, ratings, categories, and monetization stacks for TikTok, YouTube, and Instagram creators." />
+  <title>ViralCreatorTools — AI Tools Directory</title>
+  <meta name="description" content="Discover AI tools for video, writing, design, automation, and workflow documentation." />
   <meta name="robots" content="index,follow" />
 
   <!-- Open Graph -->
@@ -463,14 +463,14 @@
       table{min-width:720px}
     }
   
-    /* ULTRA PRO Affiliate Mode */
+    /* Featured tool styles */
     .toolCard.featured{
       border-color: rgba(255,176,32,.35);
       box-shadow: 0 22px 60px rgba(0,0,0,.55);
       transform: translateY(-1px);
     }
     .toolCard.featured:after{
-      content:"FEATURED";
+      content:"POPULAR";
       position:absolute;
       top:14px; left:14px;
       padding:6px 10px;
@@ -519,7 +519,7 @@
     }
 
 
-/* Creator Stack (ULTRA PRO) */
+/* Creator workflow */
 .stackGrid{
   display:grid;
   grid-template-columns: 1fr;
@@ -553,7 +553,7 @@
 
   
 
-/* ULTRA PRO Monetization Mode */
+/* Highlighted tool cards */
 .toolCard.aff{
   border-color: rgba(45,225,194,.22);
 }
@@ -562,7 +562,7 @@
   box-shadow: 0 18px 48px rgba(0,0,0,.45), 0 0 0 1px rgba(255,176,32,.10) inset;
 }
 .toolCard.money:after{
-  content:"Top earner";
+  content:"Top pick";
   position:absolute;
   top:12px; left:12px;
   padding:6px 10px;
@@ -602,7 +602,7 @@
 
       <div class="navlinks">
         <a href="#featured">Featured</a>
-        <a href="#creator-stack">Creator Stack</a>
+        <a href="#creator-stack">Workflow</a>
         <a href="#new">Added This Week</a>
         <a href="#directory">Directory</a>
         <a href="#video-tools">Video</a>
@@ -621,9 +621,9 @@
 
     <section class="hero" aria-label="Hero">
       <div>
-        <span class="pill"><span class="dot" aria-hidden="true"></span> Creator-first directory • Fast filters • Ratings • High-ticket stacks</span>
-        <h1>AI Tools Directory for Creators — built to drive clicks and conversions.</h1>
-        <p class="sub">Browse by category, see what's trending, and plug in your affiliate links as you get approved.</p>
+        <span class="pill"><span class="dot" aria-hidden="true"></span> Curated AI tools • Fast filters • Ratings • Popular picks</span>
+        <h1>Discover AI tools built for creators, teams, and online businesses.</h1>
+        <p class="sub">Browse by category, see what’s trending, and compare tools like Scribe, OpusClip, ElevenLabs, Submagic, and AdCreative.</p>
 
         <div class="ctaRow">
           <a class="btn hot" href="#new">What’s New</a>
@@ -638,40 +638,40 @@
       </div>
 
       <aside class="card sideCard" aria-label="Directory quick-start">
-        <div class="mini"><strong>Directory PRO V2 Features</strong><span>Animated badges • ratings • filters • sort • category anchors • schema.</span></div>
-        <div class="mini"><strong>Best “money” placement</strong><span>Keep one recurring anchor (CustomGPT) + add 1–2 high-ticket video tools.</span></div>
-        <div class="mini"><strong>SEO win</strong><span>Use the category anchors as pages later (/video-tools, /monetize-tools).</span></div>
+        <div class="mini"><strong>Directory features</strong><span>Ratings, filters, sorting, category browsing, and quick tool details.</span></div>
+        <div class="mini"><strong>Popular categories</strong><span>Explore workflow documentation, video editing, captions, voice, and ad creation tools.</span></div>
+        <div class="mini"><strong>Explore faster</strong><span>Jump to featured picks, categories, and side-by-side comparisons.</span></div>
       </aside>
     </section>
 
-    <!-- Featured (ULTRA PRO) -->
+    <!-- Featured -->
     <section id="featured" class="section" aria-label="Featured affiliate picks">
-      <h2>Featured picks</h2>
-      <p>Highest-converting tools (high-ticket + recurring). Placed above the fold to maximize clicks.</p>
+      <h2>Featured tools</h2>
+      <p>A curated selection of standout tools for creators, marketers, and teams.</p>
       <div class="featuredGrid" id="featuredGrid"></div>
 
       <div class="disclosure" style="margin-top:14px;">
-        Tip: keep <strong>3 featured</strong> tools max for focus. Rotate winners monthly based on clicks.
+        Explore a small set of highlighted tools chosen for popularity, versatility, and ease of use.
       </div>
     </section>
 
 
-<!-- Creator Stack (ULTRA PRO) -->
+<!-- Workflow -->
 <section id="creator-stack" class="section" aria-label="Creator growth stack">
-  <h2>Creator Growth Stack</h2>
-  <p>A proven “idea → create → publish → monetize” workflow. Use this stack to build content faster and earn more—each step links to a recommended tool.</p>
+  <h2>Creator workflow</h2>
+  <p>A simple workflow to help you go from idea to published content with the right tools at each step.</p>
 
   <div class="stackGrid" id="creatorStackGrid" aria-label="Creator stack tools"></div>
 
   <div class="disclosure" style="margin-top:14px;">
-    <strong>How to use:</strong> Start at Step 1, then move left-to-right. New visitors understand your system fast—which boosts clicks and conversions.
+    Follow the steps in order or jump to the tools that match your workflow.
   </div>
 </section>
 
     <!-- Added This Week -->
     <section id="new" class="section" aria-label="Added this week">
       <h2>Added this week</h2>
-      <p>Fresh additions to the directory. Swap placeholders for your affiliate links when approved.</p>
+      <p>Fresh additions to the directory.</p>
 
       <div class="grid3" id="newGrid">
         <!-- populated by JS from the same dataset (latest items) -->
@@ -681,7 +681,7 @@
     <!-- Directory -->
     <section id="directory" class="section" aria-label="Directory">
       <h2>Directory</h2>
-      <p>Filter + search + sort. Click a tool to open a quick details panel.</p>
+      <p>Filter, search, and sort to find the right tool for your needs.</p>
 
       <div class="toolbar" aria-label="Directory controls">
         <div class="chips" aria-label="Filters">
@@ -708,7 +708,7 @@
       <div class="grid3" id="toolGrid" aria-label="Tools list"></div>
 
       <div class="disclosure" style="margin-top:14px;">
-        Pro tip: turn each top tool into a dedicated page later (e.g., <strong>/tools/customgpt</strong>) for SEO + higher conversions.
+        Click any tool to view more details and compare options.
       </div>
     </section>
 
@@ -739,8 +739,8 @@
 
     <!-- Compare -->
     <section id="compare" class="section" aria-label="Comparison table">
-      <h2>High-ticket stack comparison</h2>
-      <p>Authority section (great for affiliate approvals). Replace “Add link” as you join programs.</p>
+      <h2>Tool comparison</h2>
+      <p>Compare tools side by side.</p>
 
       <div class="tableWrap">
         <table aria-label="AI tools comparison table">
@@ -749,7 +749,7 @@
               <th style="width:220px;">Tool</th>
               <th>Best for</th>
               <th>Why creators buy</th>
-              <th style="width:180px;">Earnings potential</th>
+              <th style="width:180px;">Highlights</th>
               <th style="width:180px;">Action</th>
             </tr>
           </thead>
@@ -758,21 +758,28 @@
               <td><strong>CustomGPT</strong></td>
               <td>Monetization + support automation</td>
               <td>Turns DMs/questions into sales with a branded AI assistant</td>
-              <td><span class="earn rec">Recurring</span> <span class="earn high">High</span></td>
+              <td><span class="earn rec">Popular</span> <span class="earn high">Versatile</span></td>
               <td><a class="btn teal" style="padding:10px 12px;border-radius:12px;" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a></td>
+            </tr>
+            <tr>
+              <td><strong>Scribe</strong></td>
+              <td>SOPs + workflow documentation</td>
+              <td>Automatically converts screen actions into step-by-step guides for teams, onboarding, and operations.</td>
+              <td><span class="earn rec">Popular</span> <span class="earn high">Versatile</span></td>
+              <td><a class="btn teal" style="padding:10px 12px;border-radius:12px;" href="http://www.scribe.com/lp/home?via=del" target="_blank" rel="nofollow sponsored noopener">Try</a></td>
             </tr>
             <tr>
               <td><strong>AI Video Repurposing</strong></td>
               <td>Shorts volume</td>
               <td>1 long video → many Shorts (clips + captions)</td>
-              <td><span class="earn med">Medium</span></td>
+              <td><span class="earn med">Flexible</span></td>
               <td><a class="btn primary" style="padding:10px 12px;border-radius:12px;" href="#video-tools">View</a></td>
             </tr>
             <tr>
               <td><strong>Thumbnails + Titles</strong></td>
               <td>CTR</td>
               <td>Higher clicks = more views = more revenue</td>
-              <td><span class="earn med">Medium</span></td>
+              <td><span class="earn med">Flexible</span></td>
               <td><a class="btn primary" style="padding:10px 12px;border-radius:12px;" href="#design-tools">View</a></td>
             </tr>
           </tbody>
@@ -780,7 +787,7 @@
       </div>
 
       <div class="disclosure" style="margin-top:14px;">
-        When you get approved for more affiliates, replace “Add link” buttons with your real tracking links.
+        Review the tool lineup and choose the option that best fits your workflow.
       </div>
     </section>
   </main>
@@ -792,7 +799,7 @@
           <span class="logo" aria-hidden="true" style="width:36px;height:36px;border-radius:14px;"></span>
           <strong>ViralCreatorTools</strong>
         </div>
-        <p style="margin:0 0 10px;">Creator-first AI tools directory for growth and monetization.</p>
+        <p style="margin:0 0 10px;">AI tools directory for content creation, productivity, and business growth.</p>
         <p class="small" style="margin:0;">© <span id="year"></span> ViralCreatorTools. All rights reserved.</p>
       </div>
 
@@ -806,7 +813,7 @@
 
   <!-- Floating CTA (desktop) -->
   <div class="floatCta" aria-label="Floating CTA">
-    <div class="floatNote" id="ctaNote">Want to monetize your audience?<br><b style="color:var(--text)" id="ctaName">Try CustomGPT</b> or watch the demo.</div>
+    <div class="floatNote" id="ctaNote">Explore a featured tool.<br><b style="color:var(--text)" id="ctaName">Try CustomGPT</b> or view details.</div>
     <div style="display:flex; gap:10px;" id="ctaBtns">
       <a class="btn teal" id="ctaPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
       <a class="btn" id="ctaSecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick(\'${t.id}\',\'demo\')">Demo</a>
@@ -816,7 +823,7 @@
   <!-- Sticky CTA (mobile) -->
   <div class="stickyCta" aria-label="Sticky call to action">
     <div class="stickyInner">
-      <div class="stickyText"><b id="ctaStickyHeadline">Monetize faster.</b><br/><span id="ctaStickySub">Try CustomGPT or watch the demo.</span></div>
+      <div class="stickyText"><b id="ctaStickyHeadline">Featured tool</b><br/><span id="ctaStickySub">Try CustomGPT or view details.</span></div>
       <div class="stickyBtns" id="ctaStickyBtns">
         <a class="btn teal" id="ctaStickyPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
         <a class="btn" id="ctaStickySecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick(\'${t.id}\',\'demo\')">Demo</a>
@@ -836,7 +843,7 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
 
-// --- ULTRA PRO Monetization Mode: simple click tracking (localStorage) ---
+// Simple click tracking (localStorage)
 function trackClick(toolId, action){
   try{
     const key = "vct_clicks_v1";
@@ -850,10 +857,22 @@ function trackClick(toolId, action){
   console.log("[VCT click]", {toolId, action, ts: Date.now()});
 }
 
-    // --- Directory dataset (swap placeholders as you add affiliates) ---
+    // Directory dataset
     // Fields:
     // id, name, category tags, blurb, rating (0-5), badgeType, earnings, added (YYYY-MM-DD), link, demoLink
     const tools = [
+      {
+        id:"scribe",
+        name:"Scribe",
+        tags:["automation","monetize","scripts"],
+        blurb:"Automatically records your workflow and turns it into a step-by-step SOP with screenshots and instructions.",
+        rating:4.9,
+        badgeType:"recurring",
+        earnings:"High value",
+        added:"2026-03-10",
+        link:"http://www.scribe.com/lp/home?via=del",
+        demoLink:"http://www.scribe.com/lp/home?via=del"
+      },
       {
         id:"customgpt",
         name:"CustomGPT",
@@ -861,12 +880,11 @@ function trackClick(toolId, action){
         blurb:"Build a branded AI assistant to answer FAQs, qualify leads, and convert viewers into buyers.",
         rating:5.0,
         badgeType:"recurring",
-        earnings:"High (recurring)",
+        earnings:"High value",
         added:"2026-02-16",
         link:"https://customgpt.ai/?fpr=del83",
         demoLink:"https://customgpt.ai/demo/?fpr=del83"
       },
-
       {
         id:"opusclip",
         name:"OpusClip",
@@ -886,7 +904,7 @@ function trackClick(toolId, action){
         blurb:"YouTube growth tool for keyword research, viral topics, and channel optimization.",
         rating:4.7,
         badgeType:"recurring",
-        earnings:"Recurring",
+        earnings:"Popular",
         added:"2026-02-21",
         link:"https://vidiq.com/viralcreatortool",
         demoLink:"https://vidiq.com/viralcreatortool"
@@ -903,20 +921,18 @@ function trackClick(toolId, action){
         link:"https://try.elevenlabs.io/zdosj2amo2mn",
         demoLink:"https://try.elevenlabs.io/zdosj2amo2mn"
       },
-
-{
-  id:"submagic",
-  name:"Submagic AI Captions",
-  tags:["video","scripts"],
-  blurb:"Create viral-style captions and subtitles automatically for Shorts, Reels, and TikTok.",
-  rating:4.8,
-  badgeType:"trending",
-  earnings:"High",
-  added:"2026-02-21",
-  link:"https://submagic.co/?via=del26",
-  demoLink:"https://submagic.co/?via=del26"
-},
-
+      {
+        id:"submagic",
+        name:"Submagic AI Captions",
+        tags:["video","scripts"],
+        blurb:"Create viral-style captions and subtitles automatically for Shorts, Reels, and TikTok.",
+        rating:4.8,
+        badgeType:"trending",
+        earnings:"High",
+        added:"2026-02-21",
+        link:"https://submagic.co/?via=del26",
+        demoLink:"https://submagic.co/?via=del26"
+      },
       {
         id:"adcreative",
         name:"AdCreative.ai",
@@ -929,7 +945,18 @@ function trackClick(toolId, action){
         link:"https://free-trial.adcreative.ai/xu0dghxazexd",
         demoLink:"https://free-trial.adcreative.ai/xu0dghxazexd"
       },
-
+      {
+        id:"adgpt",
+        name:"AdGPT",
+        tags:["design","monetize"],
+        blurb:"AI ad generator that creates high-converting ads, creatives, and copy for marketing campaigns.",
+        rating:4.7,
+        badgeType:"trending",
+        earnings:"High",
+        added:"2026-03-07",
+        link:"https://adgpt.com/?via=del",
+        demoLink:"https://adgpt.com/?via=del"
+      },
       {
         id:"ai-video-repurpose",
         name:"AI Video Repurposing",
@@ -994,12 +1021,12 @@ function trackClick(toolId, action){
 
     const badgeMap = {
       trending: { label:"Trending", class:"trending", ping:true },
-      recurring: { label:"Recurring", class:"recurring", ping:true },
+      recurring: { label:"Popular", class:"recurring", ping:true },
       highticket:{ label:"High ticket", class:"highticket", ping:false },
       new:      { label:"New", class:"new", ping:false }
     };
 
-    // ULTRA PRO: scoring to auto-rank tools for clicks/conversions
+    // Scoring to rank featured tools
     function scoreTool(t){
       const w = {recurring: 3, trending: 2, highticket: 2, new: 1};
       const badgeScore = (w[t.badgeType] || 0) * 100;
@@ -1025,19 +1052,19 @@ function trackClick(toolId, action){
       const ratingText = `${t.rating.toFixed(1)} / 5`;
       const s = "★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating));
 
-      // Earnings pill (visual conversion cue)
+      // Highlights pill
       const earnClass = /recurring/i.test(t.earnings) ? "rec"
         : /high/i.test(t.earnings) ? "high"
         : "med";
       const earnPill = `<span class="earnBadge ${earnClass}"><span class="bolt" aria-hidden="true"></span>${t.earnings}</span>`;
 
-      // Featured logic: highlight your best converters
+      // Featured logic
       const isFeatured = (t.badgeType === "recurring" || t.badgeType === "highticket") && t.rating >= 4.6 && t.link && t.link !== "#";
       const linkBtn = (t.link && t.link !== "#")
         ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
         : ``;
       const demoBtn = (t.demoLink && t.demoLink !== "#")
-        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','demo')">Demo</a>`
+        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
         : `<a class="btn" href="#compare">Compare</a>`;
 
       return `
@@ -1061,7 +1088,7 @@ function trackClick(toolId, action){
             ${linkBtn}
             ${demoBtn}
           </div>
-          <div class="small" style="margin-top:10px;">Added: ${t.added} • Earnings: ${t.earnings}</div>
+          <div class="small" style="margin-top:10px;">Added: ${t.added} • ${t.earnings}</div>
         </article>
       `;
     }
@@ -1090,11 +1117,11 @@ function stackCard(t, stepLabel, stepNum){
         ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
         : ``;
   const demoBtn = (t.demoLink && t.demoLink !== "#")
-    ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','demo')">Demo</a>`
+    ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
     : `<a class="btn" href="#compare">Compare</a>`;
 
   return `
-    <article class="card toolCard ${t.link && t.link !== "#" ? "aff" : ""} ${( /recurring/i.test(t.earnings) || /high/i.test(t.earnings) ) && t.link && t.link !== "#" ? "money" : ""} ${isFeatured ? "featuredPick" : ""}" style="padding:16px;" onclick="openModal('${t.id}')">
+    <article class="card toolCard ${t.link && t.link !== "#" ? "aff" : ""} ${( /recurring/i.test(t.earnings) || /high/i.test(t.earnings) ) && t.link && t.link !== "#" ? "money" : ""} ${((/recurring/i.test(t.earnings) || /high/i.test(t.earnings)) && t.link && t.link !== "#") ? "featuredPick" : ""}" style="padding:16px;" onclick="openModal('${t.id}')">
       <div class="stepPill" aria-label="step ${stepNum}">
         <span class="stepNum">${stepNum}</span>
         <span>${stepLabel}</span>
@@ -1134,6 +1161,7 @@ function renderCreatorStack(){
     { label:"Add AI voiceover fast", id:"elevenlabs" },
     { label:"Create viral captions", id:"submagic" },
     { label:"Generate high-converting ads", id:"adcreative" },
+    { label:"Document workflows with Scribe", id:"scribe" },
     { label:"Monetize + automate DMs", id:"customgpt" }
   ];
 
@@ -1144,10 +1172,10 @@ function renderCreatorStack(){
       return `
         <article class="card toolCard" style="padding:16px;">
           <div class="stepPill"><span class="stepNum">${i+1}</span><span>${s.label}</span></div>
-          <h3 style="margin:12px 0 6px;font-size:18px;">Add this tool</h3>
-          <p style="margin:0;color:var(--muted);font-weight:820;">You haven’t added <b>${s.id}</b> to your tools list yet. Add it in the dataset to activate.</p>
+          <h3 style="margin:12px 0 6px;font-size:18px;">Coming soon</h3>
+          <p style="margin:0;color:var(--muted);font-weight:820;">More tools are being added to this workflow.</p>
           <div class="ctaRow2" style="margin-top:12px;">
-            <a class="btn primary" href="#compare">Go to Compare</a>
+            <a class="btn primary" href="#compare">Compare tools</a>
           </div>
         </article>
       `;
@@ -1175,7 +1203,7 @@ function renderCreatorStack(){
       targetEl.innerHTML = list.map(toolCard).join("");
     }
 
-    // Default: show best converters first
+    // Default: show featured tools first
     renderAll([...tools].sort((a,b)=> scoreTool(b) - scoreTool(a)));
     renderFeatured();
     renderCreatorStack();
@@ -1262,7 +1290,7 @@ function renderCreatorStack(){
         ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
         : ``;
       const demo = (t.demoLink && t.demoLink !== "#")
-        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','demo')">Demo</a>`
+        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
         : `<a class="btn" href="#compare">Compare</a>`;
 
       modalBody.innerHTML = `
@@ -1281,7 +1309,7 @@ function renderCreatorStack(){
         <div class="disclosure" style="margin-top:12px;">
           <strong>Added:</strong> ${t.added} • <strong>Earnings:</strong> ${t.earnings}<br/>
           <div style="margin-top:10px;">${(/recurring/i.test(t.earnings) ? `<span class="earnBadge rec"><span class="bolt"></span>${t.earnings}</span>` : /high/i.test(t.earnings) ? `<span class="earnBadge high"><span class="bolt"></span>${t.earnings}</span>` : `<span class="earnBadge med"><span class="bolt"></span>${t.earnings}</span>`)}</div>
-          <div style="margin-top:10px;">Replace placeholder links with your affiliate tracking URL once approved.</div>
+          <div style="margin-top:10px;">Links and availability may change over time. Visit the tool site for the latest details.</div>
         </div>
         <div class="ctaRow2" style="margin-top:12px;">
           ${launch}
@@ -1305,8 +1333,8 @@ function renderCreatorStack(){
     });
 
 
-    // ULTRA PRO: rotating CTA (desktop + mobile) to lift CTR
-    const ctaPoolIds = ["customgpt","opusclip","elevenlabs","adcreative","vidiq"];
+    // Rotating CTA (desktop + mobile)
+    const ctaPoolIds = ["scribe","customgpt","opusclip","elevenlabs","adcreative","vidiq"];
     const ctaPool = ctaPoolIds.map(id => tools.find(t => t.id === id)).filter(Boolean);
 
     function pickCta(i){
@@ -1326,7 +1354,7 @@ function renderCreatorStack(){
       const ss2 = document.getElementById("ctaStickySecondary");
 
       if(name) name.textContent = offer.name;
-      if(note) note.innerHTML = `Monetize your audience faster.<br><b style="color:var(--text)">${offer.name}</b> is a top pick for creators.`;
+      if(note) note.innerHTML = `Explore this featured tool.<br><b style="color:var(--text)">${offer.name}</b> is a popular pick.`;
       if(p){
         p.href = offer.link || "#";
         p.textContent = "Launch";
@@ -1336,8 +1364,8 @@ function renderCreatorStack(){
         s.textContent = offer.demoLink && offer.demoLink !== offer.link ? "Demo" : "Learn";
       }
 
-      if(sh) sh.textContent = "Top creator tool:";
-      if(ss) ss.textContent = offer.name + " • tap to launch or view details.";
+      if(sh) sh.textContent = "Featured tool:";
+      if(ss) ss.textContent = offer.name + " • tap to launch or learn more.";
       if(sp){
         sp.href = offer.link || "#";
         sp.textContent = "Launch";
