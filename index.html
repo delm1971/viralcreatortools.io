@@ -1,1389 +1,308 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ViralCreatorTools — AI Tools Directory</title>
-  <meta name="description" content="Discover AI tools for video, writing, design, automation, and workflow documentation." />
-  <meta name="robots" content="index,follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="ViralCreatorTools — AI Tools Directory" />
-  <meta property="og:description" content="Trending AI tools for video, scripts, design, and monetization. Built for creators." />
-  <meta property="og:type" content="website" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Freelancers That Can Replace a $5,000 Agency</title>
+  <meta name="description" content="Discover affordable freelancers for logo design, websites, video editing, resumes, thumbnails, and more. Explore Fiverr services through this simple guide." />
   <style>
-    :root{
-      --bg:#070914;
-      --text:#F4F7FF;
-      --muted:#B8C3E6;
-      --panel:rgba(255,255,255,.05);
-      --panel2:rgba(255,255,255,.03);
-      --border:rgba(255,255,255,.10);
-      --shadow: 0 18px 48px rgba(0,0,0,.45);
-
-      --p1:#7C5CFF;
-      --p2:#2DE1C2;
-      --p3:#FFB020;
-      --p4:#FF4D8D;
-
-      --r16:16px;
-      --r20:20px;
-      --r24:24px;
-      --max:1180px;
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      color:var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:
-        radial-gradient(1200px 680px at 10% -10%, rgba(124,92,255,.35), transparent 55%),
-        radial-gradient(900px 700px at 92% 5%, rgba(45,225,194,.20), transparent 55%),
-        radial-gradient(900px 700px at 60% 120%, rgba(255,77,141,.16), transparent 60%),
-        radial-gradient(700px 500px at 10% 120%, rgba(255,176,32,.12), transparent 60%),
-        var(--bg);
-      line-height:1.55;
+    a { text-decoration: none; }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
     }
-    a{color:inherit}
-    .container{max-width:var(--max); margin:0 auto; padding:22px}
-
-    /* Top bar */
-    .topbar{
-      position:sticky; top:0; z-index:80;
-      background: rgba(7,9,20,.65);
-      backdrop-filter: blur(14px);
-      border-bottom:1px solid rgba(255,255,255,.06);
+    .hero {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      padding: 56px 24px;
     }
-    .nav{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:12px 22px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
     }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      text-decoration:none; font-weight:1000;
-      white-space:nowrap;
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #e5e7eb;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 16px;
     }
-    .logo{
-      width:40px; height:40px; border-radius:14px;
-      background: linear-gradient(135deg, var(--p1), var(--p2));
-      box-shadow: 0 16px 34px rgba(124,92,255,.22);
-      position:relative; overflow:hidden;
+    h1 {
+      font-size: 42px;
+      line-height: 1.15;
+      margin: 0 0 16px;
+      max-width: 760px;
     }
-    .logo:after{
-      content:""; position:absolute; inset:-45%;
-      background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.48), transparent 55%);
-      transform: rotate(18deg);
+    .subtitle {
+      font-size: 18px;
+      color: #d1d5db;
+      max-width: 760px;
+      margin-bottom: 28px;
     }
-    .navlinks{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
-    .navlinks a{
-      text-decoration:none;
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:12px;
-      border:1px solid transparent;
-      font-weight:950;
-      font-size:14px;
+    .btn {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: transform 0.15s ease, opacity 0.15s ease;
     }
-    .navlinks a:hover{
-      border-color:rgba(255,255,255,.10);
-      color:var(--text);
-      background: rgba(255,255,255,.03);
-    }
-
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:12px 16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      text-decoration:none;
-      font-weight:950;
-      transition: transform .08s ease, background .2s ease;
-      cursor:pointer;
-      white-space:nowrap;
-    }
-    .btn:hover{transform: translateY(-1px)}
-    .btn.primary{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p1), #5B7DFF);
-      box-shadow: 0 14px 34px rgba(124,92,255,.26);
-    }
-    .btn.teal{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p2), #27c6ff);
-      box-shadow: 0 14px 34px rgba(45,225,194,.18);
-      color:#071018;
-    }
-    .btn.hot{
-      border-color: transparent;
-      background: linear-gradient(135deg, var(--p4), var(--p3));
-      box-shadow: 0 14px 34px rgba(255,77,141,.16);
-      color:#180c11;
-    }
-
-    /* Hero */
-    .hero{
-      padding:28px 0 6px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:16px;
-      align-items:stretch;
-      position:relative;
-    }
-    .blob{
-      position:absolute;
-      right:-140px;
-      top:-120px;
-      width:380px;
-      height:380px;
-      border-radius: 120px;
-      filter: blur(26px);
-      opacity:.55;
-      background: conic-gradient(from 120deg, rgba(124,92,255,.9), rgba(45,225,194,.8), rgba(255,77,141,.8), rgba(255,176,32,.75), rgba(124,92,255,.9));
-      animation: floaty 10s ease-in-out infinite;
-      pointer-events:none;
-    }
-    @keyframes floaty{
-      0%,100%{transform: translate(0,0) rotate(0deg)}
-      50%{transform: translate(-34px, 44px) rotate(18deg)}
-    }
-    .pill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color:var(--muted);
-      font-weight:950;
-      font-size:13px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:50%;
-      background: linear-gradient(135deg, var(--p4), var(--p2));
-      box-shadow: 0 0 18px rgba(255,77,141,.25);
-    }
-    h1{
-      margin:14px 0 10px;
-      font-size: clamp(34px, 4.8vw, 56px);
-      line-height:1.02;
-      letter-spacing:-1px;
-    }
-    .sub{
-      margin:0 0 14px;
-      font-size:18px;
-      color:var(--muted);
-      max-width:64ch;
-      font-weight:780;
-    }
-    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
-
-    .card{
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      border-radius: var(--r24);
-      box-shadow: var(--shadow);
-    }
-    .sideCard{
-      padding:16px;
-      background:
-        radial-gradient(700px 380px at 20% 0%, rgba(124,92,255,.22), transparent 60%),
-        radial-gradient(700px 380px at 85% 10%, rgba(45,225,194,.16), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-    }
-    .mini{
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:16px;
-      padding:12px;
-      background: rgba(0,0,0,.14);
-    }
-    .mini strong{display:block; margin-bottom:6px}
-    .mini span{color:var(--muted); font-size:14px; font-weight:820}
-
-    .disclosure{
-      margin-top:12px;
-      color:var(--muted);
-      font-size:13px;
-      border:1px dashed rgba(255,255,255,.18);
-      border-radius:16px;
-      padding:10px 12px;
-      background: rgba(0,0,0,.12);
-      font-weight:780;
-    }
-
-    /* Controls */
-    .section{padding:22px 0}
-    .section h2{margin:0 0 8px; font-size:28px}
-    .section p{margin:0 0 14px; color:var(--muted); max-width:92ch; font-weight:780}
-
-    .toolbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px; flex-wrap:wrap;
-      margin:12px 0 14px;
-    }
-    .chips{display:flex; gap:8px; flex-wrap:wrap}
-    .chip{
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color:var(--muted);
-      padding:8px 10px;
-      border-radius:999px;
-      font-weight:950;
-      font-size:13px;
-      cursor:pointer;
-      user-select:none;
-      transition: transform .08s ease, background .2s ease, border-color .2s ease;
-    }
-    .chip:hover{transform: translateY(-1px)}
-    .chip.active{
-      border-color: rgba(45,225,194,.40);
-      background: rgba(45,225,194,.12);
-      color: var(--text);
-    }
-
-    .search{
-      flex: 1 1 280px;
-      display:flex; gap:10px; align-items:center;
-      padding:12px 14px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      min-width:260px;
-    }
-    .search input{
-      width:100%;
-      border:none; outline:none;
-      background: transparent;
-      color:var(--text);
-      font-weight:900;
-      font-size:14px;
-    }
-    .search input::placeholder{color: rgba(185,198,230,.72)}
-    .select{
-      padding:12px 14px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.18);
-      color:var(--text);
-      font-weight:900;
-      outline:none;
-    }
-
-    /* Grids */
-    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
-    .toolCard{padding:16px; position:relative; overflow:hidden}
-    .toolCard:before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background: conic-gradient(from 180deg, rgba(124,92,255,.55), rgba(45,225,194,.45), rgba(255,77,141,.45), rgba(255,176,32,.40), rgba(124,92,255,.55));
-      opacity:0;
-      transition: opacity .25s ease;
-      filter: blur(10px);
-      pointer-events:none;
-    }
-    .toolCard:hover:before{opacity:.85}
-    .toolCard > *{position:relative; z-index:2}
-
-    .toolTop{display:flex; justify-content:space-between; gap:10px; align-items:flex-start}
-    .badge{
-      font-size:12px; font-weight:1000;
-      padding:7px 10px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      white-space:nowrap;
-      display:inline-flex; align-items:center; gap:8px;
-    }
-    /* Badge animation */
-    .badge .ping{
-      width:8px; height:8px; border-radius:50%;
-      background: rgba(45,225,194,.95);
-      box-shadow: 0 0 0 rgba(45,225,194,.55);
-      animation: ping 1.6s infinite;
-    }
-    @keyframes ping{
-      0%{box-shadow: 0 0 0 0 rgba(45,225,194,.40)}
-      70%{box-shadow: 0 0 0 14px rgba(45,225,194,0)}
-      100%{box-shadow: 0 0 0 0 rgba(45,225,194,0)}
-    }
-    .badge.trending{border-color: rgba(255,77,141,.40); background: rgba(255,77,141,.14)}
-    .badge.recurring{border-color: rgba(45,225,194,.40); background: rgba(45,225,194,.12)}
-    .badge.highticket{border-color: rgba(255,176,32,.45); background: rgba(255,176,32,.14)}
-    .badge.new{border-color: rgba(124,92,255,.45); background: rgba(124,92,255,.14)}
-
-    .toolMeta{margin:10px 0 0; display:flex; gap:8px; flex-wrap:wrap}
-    .tag{
-      font-size:12px; font-weight:900;
-      padding:6px 10px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(0,0,0,.12);
-      color:var(--muted);
-    }
-    .ratingRow{
-      margin-top:10px;
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-      color:var(--muted);
-      font-weight:900;
-      font-size:13px;
-    }
-    .stars{
-      letter-spacing:1px;
-      color: rgba(255,176,32,.95);
-      font-weight:1000;
-      white-space:nowrap;
-    }
-    .ctaRow2{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
-    .small{font-size:12px; color:var(--muted); font-weight:800}
-
-    /* Table */
-    .tableWrap{overflow:auto; border-radius:18px}
-    table{
-      width:100%;
-      border-collapse:separate;
-      border-spacing:0;
-      min-width:860px;
-      background: rgba(0,0,0,.14);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:18px;
-      overflow:hidden;
-    }
-    th, td{
-      padding:12px 12px;
-      text-align:left;
-      border-bottom:1px solid rgba(255,255,255,.08);
-      color:var(--muted);
-      font-weight:850;
-      font-size:14px;
-      vertical-align:top;
-    }
-    th{
-      color:var(--text);
-      font-weight:1000;
-      background: rgba(255,255,255,.04);
-      position:sticky; top:0;
-    }
-    tr:last-child td{border-bottom:none}
-    td strong{color:var(--text)}
-    .earn{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:6px 10px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.03);
-      color:var(--text);
-      font-weight:1000; font-size:12px;
-      white-space:nowrap;
-    }
-    .earn.high{border-color: rgba(255,176,32,.45); background: rgba(255,176,32,.12)}
-    .earn.rec{border-color: rgba(45,225,194,.40); background: rgba(45,225,194,.12)}
-    .earn.med{border-color: rgba(124,92,255,.40); background: rgba(124,92,255,.12)}
-
-    /* Footer */
-    footer{
-      padding:26px 0 46px;
-      border-top:1px solid rgba(255,255,255,.08);
-      color:var(--muted);
-      font-size:14px;
-    }
-    .footergrid{
-      display:grid; grid-template-columns: 1.4fr .6fr; gap:16px;
-      align-items:start;
-    }
-    .footerlinks a{
-      display:inline-block;
-      margin:0 12px 10px 0;
-      text-decoration:none;
-      color:var(--muted);
-      font-weight:900;
-    }
-    .footerlinks a:hover{color:var(--text)}
-
-    /* Floating CTA (desktop) + sticky (mobile) */
-    .floatCta{
-      position:fixed;
-      right:18px;
-      bottom:18px;
-      z-index:90;
-      display:flex;
-      flex-direction:column;
-      gap:10px;
-      align-items:flex-end;
-    }
-    .floatNote{
-      max-width:260px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(7,9,20,.70);
-      backdrop-filter: blur(12px);
-      border-radius:18px;
-      padding:10px 12px;
-      color:var(--muted);
-      font-weight:900;
-      font-size:12px;
-      box-shadow: var(--shadow);
-    }
-    .stickyCta{
-      position:fixed; left:0; right:0; bottom:0; z-index:100;
-      padding:10px 12px calc(10px + env(safe-area-inset-bottom));
-      background: rgba(7,9,20,.78);
-      backdrop-filter: blur(14px);
-      border-top:1px solid rgba(255,255,255,.10);
-      display:none;
-    }
-    .stickyInner{
-      max-width:var(--max);
-      margin:0 auto;
-      display:flex; gap:10px;
-      align-items:center; justify-content:space-between;
-    }
-    .stickyText{
-      color:var(--muted);
-      font-weight:950;
-      font-size:13px;
-      line-height:1.15;
-    }
-    .stickyText b{color:var(--text)}
-    .stickyBtns{display:flex; gap:8px; flex-wrap:nowrap}
-    .stickyBtns .btn{padding:10px 12px; border-radius:12px; font-size:13px}
-
-    @media (max-width: 980px){
-      .hero{grid-template-columns:1fr}
-      .grid3{grid-template-columns:1fr}
-      .navlinks{display:none}
-      .stickyCta{display:block}
-      .floatCta{display:none}
-      body{padding-bottom:84px}
-      table{min-width:720px}
-    }
-  
-    /* Featured tool styles */
-    .toolCard.featured{
-      border-color: rgba(255,176,32,.35);
-      box-shadow: 0 22px 60px rgba(0,0,0,.55);
+    .btn:hover {
       transform: translateY(-1px);
+      opacity: 0.95;
     }
-    .toolCard.featured:after{
-      content:"POPULAR";
-      position:absolute;
-      top:14px; left:14px;
-      padding:6px 10px;
-      border-radius:999px;
-      font-size:11px;
-      font-weight:1000;
-      letter-spacing:.6px;
-      color:#0b0f1f;
-      background: linear-gradient(135deg, rgba(255,176,32,.95), rgba(45,225,194,.85));
-      box-shadow: 0 12px 26px rgba(255,176,32,.14);
-      z-index:3;
+    .btn-secondary {
+      background: white;
+      color: #111827;
+      margin-left: 12px;
     }
-    .earnBadge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:7px 10px;
-      border-radius:999px;
-      font-weight:1000;
-      font-size:12px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      color:var(--text);
-      white-space:nowrap;
+    .section {
+      margin: 36px 0;
     }
-    .earnBadge.high{border-color: rgba(255,176,32,.45); background: rgba(255,176,32,.12)}
-    .earnBadge.rec{border-color: rgba(45,225,194,.40); background: rgba(45,225,194,.12)}
-    .earnBadge.med{border-color: rgba(124,92,255,.40); background: rgba(124,92,255,.12)}
-    .earnBadge .bolt{
-      width:8px;height:8px;border-radius:50%;
-      background: rgba(255,176,32,.95);
-      box-shadow: 0 0 0 rgba(255,176,32,.55);
-      animation: ping 1.8s infinite;
+    .intro-card, .cta-box {
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(17,24,39,0.08);
     }
-    .featuredGrid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:14px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
     }
-    @media (min-width: 981px){
-      .featuredGrid{grid-template-columns: repeat(3, 1fr);}
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(17,24,39,0.08);
+      border: 1px solid #e5e7eb;
     }
-    .ctaSwitch{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:10px;
+    .card-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      color: #047857;
+      font-weight: bold;
+      margin-bottom: 14px;
     }
+    h2 {
+      font-size: 28px;
+      margin: 0 0 12px;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+    .price {
+      color: #10b981;
+      font-weight: bold;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 12px 0 18px;
+    }
+    .trust-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .trust-item {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      font-size: 15px;
+    }
+    .highlight {
+      background: #eefcf6;
+      border-left: 4px solid #10b981;
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 18px 0 0;
+    }
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+      padding: 20px 0 40px;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 30px; }
+      .grid, .trust-row { grid-template-columns: 1fr; }
+      .btn-secondary {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 12px;
+      }
+    }
+  </style>
 
-
-/* Creator workflow */
-.stackGrid{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap:14px;
-}
-@media (min-width: 981px){
-  .stackGrid{grid-template-columns: repeat(3, 1fr);}
-}
-.stepPill{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding:8px 10px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.04);
-  color: var(--text);
-  font-weight:1000;
-  font-size:12px;
-  width:fit-content;
-}
-.stepNum{
-  width:22px;height:22px;border-radius:999px;
-  display:inline-flex;align-items:center;justify-content:center;
-  background: linear-gradient(135deg, var(--p2), #27c6ff);
-  color:#071018;
-  font-weight:1100;
-  box-shadow: 0 10px 22px rgba(45,225,194,.18);
-}
-
-
-  
-
-/* Highlighted tool cards */
-.toolCard.aff{
-  border-color: rgba(45,225,194,.22);
-}
-.toolCard.money{
-  border-color: rgba(255,176,32,.28);
-  box-shadow: 0 18px 48px rgba(0,0,0,.45), 0 0 0 1px rgba(255,176,32,.10) inset;
-}
-.toolCard.money:after{
-  content:"Top pick";
-  position:absolute;
-  top:12px; left:12px;
-  padding:6px 10px;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:1000;
-  color:#180c11;
-  background: linear-gradient(135deg, rgba(255,176,32,.95), rgba(255,77,141,.85));
-  box-shadow: 0 10px 24px rgba(255,176,32,.14);
-  z-index:3;
-}
-.toolCard.money:hover:before{opacity:1}
-.toolCard.featuredPick{
-  transform: translateY(-2px);
-}
-
-</style>
-
-  <!-- Directory schema (simple) -->
-  <script type="application/ld+json" id="schemaJson">
-  {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "name":"ViralCreatorTools AI Directory",
-    "itemListElement":[]
-  }
-  </script>
-</head>
-
+     </head>
 <body>
-  <div class="topbar">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="ViralCreatorTools Home">
-        <span class="logo" aria-hidden="true"></span>
-        <span>ViralCreatorTools</span>
-      </a>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Affordable Freelancers • Fast Turnaround • Real Business Tasks</div>
+      <h1>7 Freelancers That Can Replace a $5,000 Agency</h1>
+      <p class="subtitle">
+        Most people assume they need a huge budget to get professional work done. In reality, thousands of businesses are using freelancers for logos, websites, video editing, resumes, and more at a fraction of the usual price.
+      </p>
+      <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Browse Freelancers on Fiverr</a>
+      <a class="btn btn-secondary" href="#top-picks">See Top Picks</a>
+    </div>
+  </header>
 
-      <div class="navlinks">
-        <a href="#featured">Featured</a>
-        <a href="#creator-stack">Workflow</a>
-        <a href="#new">Added This Week</a>
-        <a href="#directory">Directory</a>
-        <a href="#video-tools">Video</a>
-        <a href="#script-tools">Scripts</a>
-        <a href="#design-tools">Design</a>
-        <a href="#monetize-tools">Monetize</a>
-        <a href="#compare">Compare</a>
+  <main class="container">
+    <section class="section intro-card">
+      <h2>Why More Businesses Are Hiring Freelancers</h2>
+      <p>
+        Agencies can be great, but they are often expensive, slow, and locked behind long contracts. Freelancers offer a simpler way to get specific tasks done quickly without committing to huge retainers.
+      </p>
+      <p>
+        Below are some of the most popular freelancer categories people use when they need professional help without overspending.
+      </p>
+      <div class="trust-row">
+        <div class="trust-item"><strong>Lower Cost</strong><br />Find services for a fraction of agency pricing.</div>
+        <div class="trust-item"><strong>Fast Delivery</strong><br />Many freelancers offer 24 to 72 hour turnaround.</div>
+        <div class="trust-item"><strong>Flexible Options</strong><br />Choose based on budget, reviews, and project type.</div>
       </div>
+    </section>
 
-      <a class="btn primary" href="#directory">Browse Directory</a>
-    </nav>
-  </div>
+    <section class="section" id="top-picks">
+      <div class="grid">
+        <article class="card">
+          <div class="card-number">1</div>
+          <h3>Logo Designer</h3>
+          <div class="price">Typical starting price: $25+</div>
+          <p>A logo designer can help you create a polished brand identity without paying agency-level fees.</p>
+          <ul>
+            <li>Multiple concept options</li>
+            <li>Revisions based on your feedback</li>
+            <li>Fast turnaround for new brands</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Logo Designers</a>
+        </article>
 
-  <main id="top" class="container" style="position:relative;">
-    <div class="blob" aria-hidden="true"></div>
+        <article class="card">
+          <div class="card-number">2</div>
+          <h3>Website Developer</h3>
+          <div class="price">Typical starting price: $50+</div>
+          <p>Need a landing page, store, or small business site? Freelance developers can often handle one-off projects quickly.</p>
+          <ul>
+            <li>Landing pages</li>
+            <li>WordPress websites</li>
+            <li>Shopify setup and edits</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Web Developers</a>
+        </article>
 
-    <section class="hero" aria-label="Hero">
-      <div>
-        <span class="pill"><span class="dot" aria-hidden="true"></span> Curated AI tools • Fast filters • Ratings • Popular picks</span>
-        <h1>Discover AI tools built for creators, teams, and online businesses.</h1>
-        <p class="sub">Browse by category, see what’s trending, and compare tools like Scribe, OpusClip, ElevenLabs, Submagic, and AdCreative.</p>
+        <article class="card">
+          <div class="card-number">3</div>
+          <h3>Video Editor</h3>
+          <div class="price">Typical starting price: $30+</div>
+          <p>Creators and businesses use freelance editors for social clips, ads, explainers, and polished short-form videos.</p>
+          <ul>
+            <li>YouTube and TikTok editing</li>
+            <li>Captions and basic effects</li>
+            <li>Repurposed short-form content</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Video Editors</a>
+        </article>
 
-        <div class="ctaRow">
-          <a class="btn hot" href="#new">What’s New</a>
-          <a class="btn teal" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try CustomGPT</a>
-          <a class="btn" href="https://www.opus.pro?via=5ad063" target="_blank" rel="nofollow sponsored noopener">🎬 Create Viral Clips</a>
-          <a class="btn" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Watch Demo</a>
+        <article class="card">
+          <div class="card-number">4</div>
+          <h3>Resume Writer</h3>
+          <div class="price">Typical starting price: $40+</div>
+          <p>Professional resume writers can help job seekers improve formatting, keyword targeting, and overall presentation.</p>
+          <ul>
+            <li>Resume rewrites</li>
+            <li>LinkedIn profile help</li>
+            <li>Cover letter support</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Resume Writers</a>
+        </article>
+
+        <article class="card">
+          <div class="card-number">5</div>
+          <h3>YouTube Thumbnail Designer</h3>
+          <div class="price">Typical starting price: $10+</div>
+          <p>Better thumbnails can increase clicks, especially for creators running YouTube channels or video-based ads.</p>
+          <ul>
+            <li>Custom thumbnail designs</li>
+            <li>Channel branding consistency</li>
+            <li>Fast revisions</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Thumbnail Designers</a>
+        </article>
+
+        <article class="card">
+          <div class="card-number">6</div>
+          <h3>Social Media Manager</h3>
+          <div class="price">Typical starting price: $50+</div>
+          <p>Brands often outsource social scheduling, caption writing, and account support to freelancers instead of hiring full-time help.</p>
+          <ul>
+            <li>Post creation support</li>
+            <li>Scheduling and management</li>
+            <li>Platform-specific strategies</li>
+          </ul>
+          <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Find Social Media Help</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <div class="card-number">7</div>
+        <h3>AI Content and Voiceover Support</h3>
+        <div class="price">Typical starting price: varies</div>
+        <p>Businesses and creators also use freelancers for scripts, voiceovers, content cleanup, and AI-assisted creative tasks.</p>
+        <ul>
+          <li>Voiceover and narration</li>
+          <li>AI-assisted content support</li>
+          <li>Creative asset production</li>
+        </ul>
+        <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Explore Fiverr Services</a>
+        <div class="highlight">
+          Tip: This page works well as a Taboola pre-sell page because it focuses on simple, low-cost service categories people already understand.
         </div>
-
-        <div class="disclosure">
-          <strong>Affiliate disclosure:</strong> Some links may be affiliate links. If you click and purchase, we may earn a commission at no extra cost to you.
-        </div>
-      </div>
-
-      <aside class="card sideCard" aria-label="Directory quick-start">
-        <div class="mini"><strong>Directory features</strong><span>Ratings, filters, sorting, category browsing, and quick tool details.</span></div>
-        <div class="mini"><strong>Popular categories</strong><span>Explore workflow documentation, video editing, captions, voice, and ad creation tools.</span></div>
-        <div class="mini"><strong>Explore faster</strong><span>Jump to featured picks, categories, and side-by-side comparisons.</span></div>
-      </aside>
+      </article>
     </section>
 
-    <!-- Featured -->
-    <section id="featured" class="section" aria-label="Featured affiliate picks">
-      <h2>Featured tools</h2>
-      <p>A curated selection of standout tools for creators, marketers, and teams.</p>
-      <div class="featuredGrid" id="featuredGrid"></div>
-
-      <div class="disclosure" style="margin-top:14px;">
-        Explore a small set of highlighted tools chosen for popularity, versatility, and ease of use.
-      </div>
+    <section class="section cta-box">
+      <h2>Ready to Test Freelancers for Yourself?</h2>
+      <p>
+        Whether you need a logo, a website, a video editor, or help with content, freelancers give you a flexible way to get work done without a huge upfront cost.
+      </p>
+      <p>
+        Browse available services and compare options that match your budget and goals.
+      </p>
+      <a class="btn" href="https://go.fiverr.com/visit/?bta=4744&brand=fiverrmarketplace&campaign=9261" target="_blank" rel="nofollow sponsored noopener">Browse Fiverr Now</a>
     </section>
 
-
-<!-- Workflow -->
-<section id="creator-stack" class="section" aria-label="Creator growth stack">
-  <h2>Creator workflow</h2>
-  <p>A simple workflow to help you go from idea to published content with the right tools at each step.</p>
-
-  <div class="stackGrid" id="creatorStackGrid" aria-label="Creator stack tools"></div>
-
-  <div class="disclosure" style="margin-top:14px;">
-    Follow the steps in order or jump to the tools that match your workflow.
-  </div>
-</section>
-
-    <!-- Added This Week -->
-    <section id="new" class="section" aria-label="Added this week">
-      <h2>Added this week</h2>
-      <p>Fresh additions to the directory.</p>
-
-      <div class="grid3" id="newGrid">
-        <!-- populated by JS from the same dataset (latest items) -->
-      </div>
-    </section>
-
-    <!-- Directory -->
-    <section id="directory" class="section" aria-label="Directory">
-      <h2>Directory</h2>
-      <p>Filter, search, and sort to find the right tool for your needs.</p>
-
-      <div class="toolbar" aria-label="Directory controls">
-        <div class="chips" aria-label="Filters">
-          <div class="chip active" data-filter="all">All</div>
-          <div class="chip" data-filter="video">Video</div>
-          <div class="chip" data-filter="scripts">Scripts</div>
-          <div class="chip" data-filter="design">Design</div>
-          <div class="chip" data-filter="monetize">Monetize</div>
-          <div class="chip" data-filter="automation">Automation</div>
-        </div>
-
-        <div class="search" role="search">
-          <input id="searchInput" placeholder="Search tools (captions, voice, avatars…)" aria-label="Search tools" />
-        </div>
-
-        <select id="sortSelect" class="select" aria-label="Sort tools">
-          <option value="trending">Sort: Trending</option>
-          <option value="rating">Sort: Rating</option>
-          <option value="newest">Sort: Newest</option>
-          <option value="alpha">Sort: A–Z</option>
-        </select>
-      </div>
-
-      <div class="grid3" id="toolGrid" aria-label="Tools list"></div>
-
-      <div class="disclosure" style="margin-top:14px;">
-        Click any tool to view more details and compare options.
-      </div>
-    </section>
-
-    <!-- Category anchors (acts like pages) -->
-    <section id="video-tools" class="section" aria-label="Video tools">
-      <h2>Video tools</h2>
-      <p>Shorts factories, repurposers, captioning, and editors.</p>
-      <div class="grid3" id="videoGrid"></div>
-    </section>
-
-    <section id="script-tools" class="section" aria-label="Script tools">
-      <h2>Script tools</h2>
-      <p>Hooks, outlines, captions, and content ideas.</p>
-      <div class="grid3" id="scriptsGrid"></div>
-    </section>
-
-    <section id="design-tools" class="section" aria-label="Design tools">
-      <h2>Design tools</h2>
-      <p>Thumbnails, templates, and creative workflows.</p>
-      <div class="grid3" id="designGrid"></div>
-    </section>
-
-    <section id="monetize-tools" class="section" aria-label="Monetize tools">
-      <h2>Monetize tools</h2>
-      <p>Funnels, assistants, and conversion-focused stacks.</p>
-      <div class="grid3" id="monetizeGrid"></div>
-    </section>
-
-    <!-- Compare -->
-    <section id="compare" class="section" aria-label="Comparison table">
-      <h2>Tool comparison</h2>
-      <p>Compare tools side by side.</p>
-
-      <div class="tableWrap">
-        <table aria-label="AI tools comparison table">
-          <thead>
-            <tr>
-              <th style="width:220px;">Tool</th>
-              <th>Best for</th>
-              <th>Why creators buy</th>
-              <th style="width:180px;">Highlights</th>
-              <th style="width:180px;">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>CustomGPT</strong></td>
-              <td>Monetization + support automation</td>
-              <td>Turns DMs/questions into sales with a branded AI assistant</td>
-              <td><span class="earn rec">Popular</span> <span class="earn high">Versatile</span></td>
-              <td><a class="btn teal" style="padding:10px 12px;border-radius:12px;" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a></td>
-            </tr>
-            <tr>
-              <td><strong>Scribe</strong></td>
-              <td>SOPs + workflow documentation</td>
-              <td>Automatically converts screen actions into step-by-step guides for teams, onboarding, and operations.</td>
-              <td><span class="earn rec">Popular</span> <span class="earn high">Versatile</span></td>
-              <td><a class="btn teal" style="padding:10px 12px;border-radius:12px;" href="http://www.scribe.com/lp/home?via=del" target="_blank" rel="nofollow sponsored noopener">Try</a></td>
-            </tr>
-            <tr>
-              <td><strong>AI Video Repurposing</strong></td>
-              <td>Shorts volume</td>
-              <td>1 long video → many Shorts (clips + captions)</td>
-              <td><span class="earn med">Flexible</span></td>
-              <td><a class="btn primary" style="padding:10px 12px;border-radius:12px;" href="#video-tools">View</a></td>
-            </tr>
-            <tr>
-              <td><strong>Thumbnails + Titles</strong></td>
-              <td>CTR</td>
-              <td>Higher clicks = more views = more revenue</td>
-              <td><span class="earn med">Flexible</span></td>
-              <td><a class="btn primary" style="padding:10px 12px;border-radius:12px;" href="#design-tools">View</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="disclosure" style="margin-top:14px;">
-        Review the tool lineup and choose the option that best fits your workflow.
-      </div>
-    </section>
+    <div class="footer">
+      This page may contain affiliate links. If you make a purchase through them, a commission may be earned at no extra cost to you.
+    </div>
   </main>
-
-  <footer class="container" aria-label="Footer">
-    <div class="footergrid">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <span class="logo" aria-hidden="true" style="width:36px;height:36px;border-radius:14px;"></span>
-          <strong>ViralCreatorTools</strong>
-        </div>
-        <p style="margin:0 0 10px;">AI tools directory for content creation, productivity, and business growth.</p>
-        <p class="small" style="margin:0;">© <span id="year"></span> ViralCreatorTools. All rights reserved.</p>
-      </div>
-
-      <div class="footerlinks">
-        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms">Terms</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating CTA (desktop) -->
-  <div class="floatCta" aria-label="Floating CTA">
-    <div class="floatNote" id="ctaNote">Explore a featured tool.<br><b style="color:var(--text)" id="ctaName">Try CustomGPT</b> or view details.</div>
-    <div style="display:flex; gap:10px;" id="ctaBtns">
-      <a class="btn teal" id="ctaPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
-      <a class="btn" id="ctaSecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick(\'${t.id}\',\'demo\')">Demo</a>
-    </div>
-  </div>
-
-  <!-- Sticky CTA (mobile) -->
-  <div class="stickyCta" aria-label="Sticky call to action">
-    <div class="stickyInner">
-      <div class="stickyText"><b id="ctaStickyHeadline">Featured tool</b><br/><span id="ctaStickySub">Try CustomGPT or view details.</span></div>
-      <div class="stickyBtns" id="ctaStickyBtns">
-        <a class="btn teal" id="ctaStickyPrimary" href="https://customgpt.ai/?fpr=del83" target="_blank" rel="nofollow sponsored noopener">Try</a>
-        <a class="btn" id="ctaStickySecondary" href="https://customgpt.ai/demo/?fpr=del83" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick(\'${t.id}\',\'demo\')">Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tool modal -->
-  <div id="modal" style="display:none; position:fixed; inset:0; z-index:120; background:rgba(0,0,0,.60); padding:18px;">
-    <div class="card" style="max-width:720px; margin:40px auto; padding:18px; position:relative;">
-      <button class="btn" style="position:absolute; right:14px; top:14px; padding:10px 12px; border-radius:12px;" onclick="closeModal()">Close</button>
-      <div id="modalBody"></div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-
-// Simple click tracking (localStorage)
-function trackClick(toolId, action){
-  try{
-    const key = "vct_clicks_v1";
-    const data = JSON.parse(localStorage.getItem(key) || "{}");
-    data[toolId] = data[toolId] || {};
-    data[toolId][action] = (data[toolId][action] || 0) + 1;
-    data[toolId].last = new Date().toISOString();
-    localStorage.setItem(key, JSON.stringify(data));
-  }catch(e){}
-  // Also log for quick debugging
-  console.log("[VCT click]", {toolId, action, ts: Date.now()});
-}
-
-    // Directory dataset
-    // Fields:
-    // id, name, category tags, blurb, rating (0-5), badgeType, earnings, added (YYYY-MM-DD), link, demoLink
-    const tools = [
-      {
-        id:"scribe",
-        name:"Scribe",
-        tags:["automation","monetize","scripts"],
-        blurb:"Automatically records your workflow and turns it into a step-by-step SOP with screenshots and instructions.",
-        rating:4.9,
-        badgeType:"recurring",
-        earnings:"High value",
-        added:"2026-03-10",
-        link:"http://www.scribe.com/lp/home?via=del",
-        demoLink:"http://www.scribe.com/lp/home?via=del"
-      },
-      {
-        id:"customgpt",
-        name:"CustomGPT",
-        tags:["monetize","automation"],
-        blurb:"Build a branded AI assistant to answer FAQs, qualify leads, and convert viewers into buyers.",
-        rating:5.0,
-        badgeType:"recurring",
-        earnings:"High value",
-        added:"2026-02-16",
-        link:"https://customgpt.ai/?fpr=del83",
-        demoLink:"https://customgpt.ai/demo/?fpr=del83"
-      },
-      {
-        id:"opusclip",
-        name:"OpusClip",
-        tags:["video"],
-        blurb:"Turn long videos into viral Shorts automatically with AI clipping, captions, and reframing.",
-        rating:4.8,
-        badgeType:"trending",
-        earnings:"High",
-        added:"2026-02-21",
-        link:"https://www.opus.pro?via=5ad063",
-        demoLink:"https://www.opus.pro?via=5ad063"
-      },
-      {
-        id:"vidiq",
-        name:"vidIQ",
-        tags:["scripts","automation"],
-        blurb:"YouTube growth tool for keyword research, viral topics, and channel optimization.",
-        rating:4.7,
-        badgeType:"recurring",
-        earnings:"Popular",
-        added:"2026-02-21",
-        link:"https://vidiq.com/viralcreatortool",
-        demoLink:"https://vidiq.com/viralcreatortool"
-      },
-      {
-        id:"elevenlabs",
-        name:"ElevenLabs AI Voice",
-        tags:["video","scripts"],
-        blurb:"Generate ultra-realistic AI voiceovers for faceless YouTube, ads, and content creation.",
-        rating:4.9,
-        badgeType:"highticket",
-        earnings:"High",
-        added:"2026-02-21",
-        link:"https://try.elevenlabs.io/zdosj2amo2mn",
-        demoLink:"https://try.elevenlabs.io/zdosj2amo2mn"
-      },
-      {
-        id:"submagic",
-        name:"Submagic AI Captions",
-        tags:["video","scripts"],
-        blurb:"Create viral-style captions and subtitles automatically for Shorts, Reels, and TikTok.",
-        rating:4.8,
-        badgeType:"trending",
-        earnings:"High",
-        added:"2026-02-21",
-        link:"https://submagic.co/?via=del26",
-        demoLink:"https://submagic.co/?via=del26"
-      },
-      {
-        id:"adcreative",
-        name:"AdCreative.ai",
-        tags:["design","monetize"],
-        blurb:"AI ad creator built for high-converting creatives, native ads, and affiliate funnels.",
-        rating:4.6,
-        badgeType:"recurring",
-        earnings:"High",
-        added:"2026-02-21",
-        link:"https://free-trial.adcreative.ai/xu0dghxazexd",
-        demoLink:"https://free-trial.adcreative.ai/xu0dghxazexd"
-      },
-      {
-        id:"adgpt",
-        name:"AdGPT",
-        tags:["design","monetize"],
-        blurb:"AI ad generator that creates high-converting ads, creatives, and copy for marketing campaigns.",
-        rating:4.7,
-        badgeType:"trending",
-        earnings:"High",
-        added:"2026-03-07",
-        link:"https://adgpt.com/?via=del",
-        demoLink:"https://adgpt.com/?via=del"
-      },
-      {
-        id:"ai-video-repurpose",
-        name:"AI Video Repurposing",
-        tags:["video"],
-        blurb:"Turn 1 long video into many Shorts with clips + captions. Great for volume posting.",
-        rating:4.4,
-        badgeType:"trending",
-        earnings:"Medium",
-        added:"2026-02-15",
-        link:"#",
-        demoLink:"#"
-      },
-      {
-        id:"ai-script-generator",
-        name:"AI Script Generator",
-        tags:["scripts"],
-        blurb:"Hooks → outline → script. Designed for short-form pacing and retention.",
-        rating:4.3,
-        badgeType:"new",
-        earnings:"Medium",
-        added:"2026-02-14",
-        link:"#",
-        demoLink:"#"
-      },
-      {
-        id:"ai-thumbnail-studio",
-        name:"AI Thumbnail Studio",
-        tags:["design"],
-        blurb:"High-CTR thumbnail ideas + title variants. Built for testing and clicks.",
-        rating:4.2,
-        badgeType:"highticket",
-        earnings:"Medium",
-        added:"2026-02-13",
-        link:"#",
-        demoLink:"#"
-      },
-      {
-        id:"caption-subtitles",
-        name:"Captions + Subtitles",
-        tags:["video","scripts"],
-        blurb:"Punchy captions and on-screen subtitles to boost watch time and retention.",
-        rating:4.1,
-        badgeType:"trending",
-        earnings:"Medium",
-        added:"2026-02-12",
-        link:"#",
-        demoLink:"#"
-      },
-      {
-        id:"creator-automation-stack",
-        name:"Creator Automation Stack",
-        tags:["monetize","automation"],
-        blurb:"Link-in-bio + email + AI assistant = a simple monetization system.",
-        rating:4.6,
-        badgeType:"recurring",
-        earnings:"High",
-        added:"2026-02-11",
-        link:"https://customgpt.ai/?fpr=del83",
-        demoLink:"https://customgpt.ai/demo/?fpr=del83"
-      }
-    ];
-
-    const badgeMap = {
-      trending: { label:"Trending", class:"trending", ping:true },
-      recurring: { label:"Popular", class:"recurring", ping:true },
-      highticket:{ label:"High ticket", class:"highticket", ping:false },
-      new:      { label:"New", class:"new", ping:false }
-    };
-
-    // Scoring to rank featured tools
-    function scoreTool(t){
-      const w = {recurring: 3, trending: 2, highticket: 2, new: 1};
-      const badgeScore = (w[t.badgeType] || 0) * 100;
-      const ratingScore = (t.rating || 0) * 10;
-      const hasLink = (t.link && t.link !== "#") ? 40 : 0;
-      const earningsBoost = /recurring/i.test(t.earnings) ? 30 : /high/i.test(t.earnings) ? 20 : 0;
-      return badgeScore + ratingScore + hasLink + earningsBoost;
-    }
-
-
-    function stars(r){
-      const full = Math.floor(r);
-      const half = (r - full) >= 0.5 ? 1 : 0;
-      const empty = 5 - full - half;
-      return "★".repeat(full) + (half ? "☆" : "") + "✩".repeat(empty);
-    }
-
-    function toolCard(t){
-      const b = badgeMap[t.badgeType] || badgeMap.trending;
-      const ping = b.ping ? '<span class="ping" aria-hidden="true"></span>' : '';
-      const badge = `<span class="badge ${b.class}">${ping}${b.label}</span>`;
-      const tagChips = t.tags.map(x => `<span class="tag">${x}</span>`).join("");
-      const ratingText = `${t.rating.toFixed(1)} / 5`;
-      const s = "★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating));
-
-      // Highlights pill
-      const earnClass = /recurring/i.test(t.earnings) ? "rec"
-        : /high/i.test(t.earnings) ? "high"
-        : "med";
-      const earnPill = `<span class="earnBadge ${earnClass}"><span class="bolt" aria-hidden="true"></span>${t.earnings}</span>`;
-
-      // Featured logic
-      const isFeatured = (t.badgeType === "recurring" || t.badgeType === "highticket") && t.rating >= 4.6 && t.link && t.link !== "#";
-      const linkBtn = (t.link && t.link !== "#")
-        ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
-        : ``;
-      const demoBtn = (t.demoLink && t.demoLink !== "#")
-        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
-        : `<a class="btn" href="#compare">Compare</a>`;
-
-      return `
-        <article class="card toolCard ${isFeatured ? "featured" : ""}" data-tags="${t.tags.join(" ")}" data-name="${t.name.toLowerCase()}" data-rating="${t.rating}" data-added="${t.added}" onclick="openModal('${t.id}')">
-          <div class="toolTop">
-            <div>
-              <h3 style="margin:0 0 6px;font-size:18px;">${t.name}</h3>
-              <p style="margin:0;color:var(--muted);font-weight:820;">${t.blurb}</p>
-            </div>
-            ${badge}
-          </div>
-          <div class="toolMeta">${tagChips}</div>
-          <div class="ratingRow">
-            <span class="stars" aria-label="rating">${s}</span>
-            <span>${ratingText}</span>
-          </div>
-          <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-            ${earnPill}
-          </div>
-          <div class="ctaRow2" onclick="event.stopPropagation()">
-            ${linkBtn}
-            ${demoBtn}
-          </div>
-          <div class="small" style="margin-top:10px;">Added: ${t.added} • ${t.earnings}</div>
-        </article>
-      `;
-    }
-
-    // Render
-    const toolGrid = document.getElementById("toolGrid");
-    const newGrid = document.getElementById("newGrid");
-    const featuredGrid = document.getElementById("featuredGrid");
-    const creatorStackGrid = document.getElementById("creatorStackGrid");
-    const videoGrid = document.getElementById("videoGrid");
-    const scriptsGrid = document.getElementById("scriptsGrid");
-    const designGrid = document.getElementById("designGrid");
-    const monetizeGrid = document.getElementById("monetizeGrid");
-
-    function renderAll(list){
-      toolGrid.innerHTML = list.map(toolCard).join("");
-    }
-
-    
-function stackCard(t, stepLabel, stepNum){
-  const b = badgeMap[t.badgeType] || badgeMap.trending;
-  const ping = b.ping ? '<span class="ping" aria-hidden="true"></span>' : '';
-  const badge = `<span class="badge ${b.class}">${ping}${b.label}</span>`;
-  const tagChips = t.tags.map(x => `<span class="tag">${x}</span>`).join("");
-  const linkBtn = (t.link && t.link !== "#")
-        ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
-        : ``;
-  const demoBtn = (t.demoLink && t.demoLink !== "#")
-    ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
-    : `<a class="btn" href="#compare">Compare</a>`;
-
-  return `
-    <article class="card toolCard ${t.link && t.link !== "#" ? "aff" : ""} ${( /recurring/i.test(t.earnings) || /high/i.test(t.earnings) ) && t.link && t.link !== "#" ? "money" : ""} ${((/recurring/i.test(t.earnings) || /high/i.test(t.earnings)) && t.link && t.link !== "#") ? "featuredPick" : ""}" style="padding:16px;" onclick="openModal('${t.id}')">
-      <div class="stepPill" aria-label="step ${stepNum}">
-        <span class="stepNum">${stepNum}</span>
-        <span>${stepLabel}</span>
-      </div>
-
-      <div class="toolTop" style="margin-top:10px;">
-        <div>
-          <h3 style="margin:0 0 6px;font-size:18px;">${t.name}</h3>
-          <p style="margin:0;color:var(--muted);font-weight:820;">${t.blurb}</p>
-        </div>
-        ${badge}
-      </div>
-
-      <div class="toolMeta">${tagChips}</div>
-
-      <div class="ratingRow">
-        <span class="stars" aria-label="rating">${"★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating))}</span>
-        <span>${t.rating.toFixed(1)} / 5</span>
-      </div>
-
-      <div class="ctaRow2" onclick="event.stopPropagation()">
-        ${linkBtn}
-        ${demoBtn}
-      </div>
-
-      <div class="small" style="margin-top:10px;">Earnings: ${t.earnings}</div>
-    </article>
-  `;
-}
-
-function renderCreatorStack(){
-  if(!creatorStackGrid) return;
-
-  const steps = [
-    { label:"Discover ideas & keywords", id:"vidiq" },
-    { label:"Repurpose long → Shorts", id:"opusclip" },
-    { label:"Add AI voiceover fast", id:"elevenlabs" },
-    { label:"Create viral captions", id:"submagic" },
-    { label:"Generate high-converting ads", id:"adcreative" },
-    { label:"Document workflows with Scribe", id:"scribe" },
-    { label:"Monetize + automate DMs", id:"customgpt" }
-  ];
-
-  // If a tool isn't in the dataset yet, show a placeholder that points to Compare.
-  const cards = steps.map((s, i) => {
-    const t = tools.find(x => x.id === s.id);
-    if(!t){
-      return `
-        <article class="card toolCard" style="padding:16px;">
-          <div class="stepPill"><span class="stepNum">${i+1}</span><span>${s.label}</span></div>
-          <h3 style="margin:12px 0 6px;font-size:18px;">Coming soon</h3>
-          <p style="margin:0;color:var(--muted);font-weight:820;">More tools are being added to this workflow.</p>
-          <div class="ctaRow2" style="margin-top:12px;">
-            <a class="btn primary" href="#compare">Compare tools</a>
-          </div>
-        </article>
-      `;
-    }
-    return stackCard(t, s.label, i+1);
-  });
-
-  creatorStackGrid.innerHTML = cards.join("");
-}function renderFeatured(){
-      // pick top 3 by score (must have a real link)
-      const picks = [...tools]
-        .filter(t => t.link && t.link !== "#")
-        .sort((a,b)=> scoreTool(b) - scoreTool(a))
-        .slice(0,3);
-      if(featuredGrid) featuredGrid.innerHTML = picks.map(toolCard).join("");
-    }
-
-    function renderNew(){
-      const latest = [...tools].sort((a,b)=> (b.added.localeCompare(a.added))).slice(0,3);
-      newGrid.innerHTML = latest.map(toolCard).join("");
-    }
-
-    function renderByCategory(tag, targetEl){
-      const list = tools.filter(t => t.tags.includes(tag));
-      targetEl.innerHTML = list.map(toolCard).join("");
-    }
-
-    // Default: show featured tools first
-    renderAll([...tools].sort((a,b)=> scoreTool(b) - scoreTool(a)));
-    renderFeatured();
-    renderCreatorStack();
-    renderNew();
-    renderByCategory("video", videoGrid);
-    renderByCategory("scripts", scriptsGrid);
-    renderByCategory("design", designGrid);
-    renderByCategory("monetize", monetizeGrid);
-
-    // Build simple schema ItemList
-    const schema = {
-      "@context":"https://schema.org",
-      "@type":"ItemList",
-      "name":"ViralCreatorTools AI Directory",
-      "itemListElement": tools.map((t, idx) => ({
-        "@type":"ListItem",
-        "position": idx+1,
-        "name": t.name,
-        "url": (t.link && t.link !== "#") ? t.link : location.href + "#directory"
-      }))
-    };
-    document.getElementById("schemaJson").textContent = JSON.stringify(schema, null, 2);
-
-    // Filters
-    const chips = Array.from(document.querySelectorAll(".chip"));
-    let activeFilter = "all";
-
-    function applyFilterAndSearch(){
-      const q = (document.getElementById("searchInput").value || "").toLowerCase().trim();
-      const cards = Array.from(document.querySelectorAll("#toolGrid .toolCard"));
-      cards.forEach(card => {
-        const tags = (card.getAttribute("data-tags") || "").toLowerCase();
-        const name = (card.getAttribute("data-name") || "");
-        const matchesFilter = (activeFilter === "all") || tags.includes(activeFilter);
-        const matchesSearch = !q || name.includes(q) || card.innerText.toLowerCase().includes(q);
-        card.style.display = (matchesFilter && matchesSearch) ? "" : "none";
-      });
-    }
-
-    chips.forEach(chip => chip.addEventListener("click", () => {
-      activeFilter = chip.dataset.filter;
-      chips.forEach(c => c.classList.toggle("active", c.dataset.filter === activeFilter));
-      applyFilterAndSearch();
-    }));
-
-    document.getElementById("searchInput").addEventListener("input", applyFilterAndSearch);
-
-    // Sort
-    document.getElementById("sortSelect").addEventListener("change", (e) => {
-      const mode = e.target.value;
-      let list = [...tools];
-
-      if(mode === "rating"){
-        list.sort((a,b)=> b.rating - a.rating);
-      }else if(mode === "newest"){
-        list.sort((a,b)=> b.added.localeCompare(a.added));
-      }else if(mode === "alpha"){
-        list.sort((a,b)=> a.name.localeCompare(b.name));
-      }else{
-        // trending: recurring + trending first, then rating
-        const score = (t) => {
-          const w = {recurring: 3, trending: 2, highticket: 1, new: 1};
-          return (w[t.badgeType] || 0) * 100 + t.rating * 10;
-        };
-        list.sort((a,b)=> score(b) - score(a));
-      }
-
-      renderAll(list);
-      renderFeatured();
-      applyFilterAndSearch(); // keep current filter/search
-    });
-
-    // Modal
-    const modal = document.getElementById("modal");
-    const modalBody = document.getElementById("modalBody");
-
-    function openModal(id){
-      const t = tools.find(x => x.id === id);
-      if(!t) return;
-      const b = badgeMap[t.badgeType] || badgeMap.trending;
-      const badge = `<span class="badge ${b.class}">${b.ping ? '<span class="ping"></span>' : ''}${b.label}</span>`;
-      const tagChips = t.tags.map(x => `<span class="tag">${x}</span>`).join("");
-      const launch = (t.link && t.link !== "#")
-        ? `<a class="btn teal" href="${t.link}" target="_blank" rel="nofollow sponsored noopener" onclick="trackClick('${t.id}','launch')">Launch</a>`
-        : ``;
-      const demo = (t.demoLink && t.demoLink !== "#")
-        ? `<a class="btn" href="${t.demoLink}" target="_blank" rel="nofollow sponsored noopener">Demo</a>`
-        : `<a class="btn" href="#compare">Compare</a>`;
-
-      modalBody.innerHTML = `
-        <div style="display:flex; gap:10px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap;">
-          <div>
-            <h2 style="margin:0 0 6px;">${t.name}</h2>
-            <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-              ${badge}
-              <span class="stars" style="font-size:14px;">${"★".repeat(Math.round(t.rating)) + "☆".repeat(5 - Math.round(t.rating))}</span>
-              <span class="small">${t.rating.toFixed(1)} / 5</span>
-            </div>
-          </div>
-        </div>
-        <p style="color:var(--muted); font-weight:820; margin:10px 0 0;">${t.blurb}</p>
-        <div class="toolMeta" style="margin-top:12px;">${tagChips}</div>
-        <div class="disclosure" style="margin-top:12px;">
-          <strong>Added:</strong> ${t.added} • <strong>Earnings:</strong> ${t.earnings}<br/>
-          <div style="margin-top:10px;">${(/recurring/i.test(t.earnings) ? `<span class="earnBadge rec"><span class="bolt"></span>${t.earnings}</span>` : /high/i.test(t.earnings) ? `<span class="earnBadge high"><span class="bolt"></span>${t.earnings}</span>` : `<span class="earnBadge med"><span class="bolt"></span>${t.earnings}</span>`)}</div>
-          <div style="margin-top:10px;">Links and availability may change over time. Visit the tool site for the latest details.</div>
-        </div>
-        <div class="ctaRow2" style="margin-top:12px;">
-          ${launch}
-          ${demo}
-        </div>
-      `;
-      modal.style.display = "block";
-    }
-    function closeModal(){ modal.style.display = "none"; }
-    window.openModal = openModal;
-    window.closeModal = closeModal;
-
-    // Close modal by clicking backdrop
-    modal.addEventListener("click", (e) => {
-      if(e.target === modal) closeModal();
-    });
-
-    // Esc to close
-    window.addEventListener("keydown", (e) => {
-      if(e.key === "Escape") closeModal();
-    });
-
-
-    // Rotating CTA (desktop + mobile)
-    const ctaPoolIds = ["scribe","customgpt","opusclip","elevenlabs","adcreative","vidiq"];
-    const ctaPool = ctaPoolIds.map(id => tools.find(t => t.id === id)).filter(Boolean);
-
-    function pickCta(i){
-      if(!ctaPool.length) return null;
-      return ctaPool[i % ctaPool.length];
-    }
-
-    function setCta(offer){
-      if(!offer) return;
-      const name = document.getElementById("ctaName");
-      const note = document.getElementById("ctaNote");
-      const p = document.getElementById("ctaPrimary");
-      const s = document.getElementById("ctaSecondary");
-      const sh = document.getElementById("ctaStickyHeadline");
-      const ss = document.getElementById("ctaStickySub");
-      const sp = document.getElementById("ctaStickyPrimary");
-      const ss2 = document.getElementById("ctaStickySecondary");
-
-      if(name) name.textContent = offer.name;
-      if(note) note.innerHTML = `Explore this featured tool.<br><b style="color:var(--text)">${offer.name}</b> is a popular pick.`;
-      if(p){
-        p.href = offer.link || "#";
-        p.textContent = "Launch";
-      }
-      if(s){
-        s.href = offer.demoLink || offer.link || "#";
-        s.textContent = offer.demoLink && offer.demoLink !== offer.link ? "Demo" : "Learn";
-      }
-
-      if(sh) sh.textContent = "Featured tool:";
-      if(ss) ss.textContent = offer.name + " • tap to launch or learn more.";
-      if(sp){
-        sp.href = offer.link || "#";
-        sp.textContent = "Launch";
-      }
-      if(ss2){
-        ss2.href = offer.demoLink || offer.link || "#";
-        ss2.textContent = offer.demoLink && offer.demoLink !== offer.link ? "Demo" : "Learn";
-      }
-    }
-
-    // Start
-    let ctaIndex = 0;
-    setCta(pickCta(ctaIndex));
-    setInterval(() => {
-      ctaIndex++;
-      setCta(pickCta(ctaIndex));
-    }, 12000);
-
-  </script>
 </body>
 </html>
