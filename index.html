@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="en">
-<head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8909086376884827"
-     crossorigin="anonymous"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8909086376884827"
-     crossorigin="anonymous"></script>
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8909086376884827" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ViralCreatorTools — AI Tools Directory</title>
-  <meta name="description" content="Discover AI tools for video, writing, design, automation, and workflow documentation." />
+  <title>ViralCreatorTools — AI & Creator Growth Tools</title>
+  <meta name="description" content="Discover AI tools, creator growth resources, video tools, automation platforms, and practical marketing guides for creators and online businesses." />
   <meta name="robots" content="index,follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ViralCreatorTools — AI Tools Directory" />
-  <meta property="og:description" content="Trending AI tools for video, scripts, design, and monetization. Built for creators." />
+  <meta property="og:title" content="ViralCreatorTools — AI & Creator Growth Tools" />
+  <meta property="og:description" content="AI tools, creator workflows, and growth guides for creators, marketers, and online businesses." />
   <meta property="og:type" content="website" />
 
   <style>
@@ -581,6 +580,31 @@
   transform: translateY(-2px);
 }
 
+
+    /* Growth guide cards */
+    .guideGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .guideCard{padding:18px;position:relative;overflow:hidden}
+    .guideCard h3{margin:10px 0 8px;font-size:20px}
+    .guideCard p{margin:0;color:var(--muted);font-weight:780}
+    .guideKicker{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 10px;border-radius:999px;
+      border:1px solid rgba(124,92,255,.38);
+      background:rgba(124,92,255,.13);
+      font-size:12px;font-weight:1000
+    }
+    .guideMeta{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .guideMeta span{
+      padding:6px 9px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.12);
+      color:var(--muted);font-size:12px;font-weight:900
+    }
+    .aboutGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+    @media (max-width:980px){
+      .guideGrid,.aboutGrid{grid-template-columns:1fr}
+    }
+
 </style>
 
   <!-- Directory schema (simple) -->
@@ -605,6 +629,7 @@
       <div class="navlinks">
         <a href="#featured">Featured</a>
         <a href="#creator-stack">Workflow</a>
+        <a href="#guides">Guides</a>
         <a href="#new">Added This Week</a>
         <a href="#directory">Directory</a>
         <a href="#video-tools">Video</a>
@@ -792,6 +817,24 @@
         Review the tool lineup and choose the option that best fits your workflow.
       </div>
     </section>
+
+    <section id="about" class="section" aria-label="About ViralCreatorTools">
+      <h2>About ViralCreatorTools</h2>
+      <div class="aboutGrid">
+        <div class="card" style="padding:18px;">
+          <p style="margin:0;color:var(--muted);font-weight:780;">
+            ViralCreatorTools is an independent resource for creators, marketers, and online businesses looking for practical AI tools, workflow ideas, and growth guides. We focus on useful comparisons and educational content rather than presenting any third-party platform as our own.
+          </p>
+        </div>
+        <div class="card" style="padding:18px;">
+          <strong style="display:block;margin-bottom:8px;">Editorial & affiliate policy</strong>
+          <p style="margin:0;color:var(--muted);font-weight:780;">
+            Some outbound links are affiliate links. Affiliate relationships do not change the price you pay, and sponsored links are labeled in the page markup.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="container" aria-label="Footer">
@@ -806,6 +849,9 @@
       </div>
 
       <div class="footerlinks">
+        <a href="/#about">About</a>
+        <a href="/tiktok-creator-marketplace.html">Guides</a>
+        <a href="/contact">Contact</a>
         <a href="/affiliate-disclosure">Affiliate Disclosure</a>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms">Terms</a>
